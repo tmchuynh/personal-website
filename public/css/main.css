@@ -12,7 +12,7 @@
   /*variables*/
   /* Colors */
   --orange: #8F250C;
-  --dark-grey: #848586;
+  --dark-grey: #4d4d4d;
   --light-grey: #F8F7F9;
   --black: #0f0e0e;
   /* Typography */
@@ -117,10 +117,12 @@ a:hover {
 
 .bg-body-tertiary {
   background-color: var(--dark-grey) !important;
+  box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
+  -moz-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
+  -webkit-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
 }
 
-.navbar-nav,
-.dropdown-item {
+.navbar-nav {
   min-width: fit-content;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -128,9 +130,7 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-
-  .navbar-nav,
-  .dropdown-item {
+  .navbar-nav {
     text-align: center;
   }
 }
@@ -151,14 +151,17 @@ a:hover {
 .navbar-toggler {
   padding-right: 2.5rem;
   width: 1rem;
+  border: none;
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-.navbar-toggler-icon {
+.bx-menu-alt-right {
   padding-right: 1rem;
+  font-size: 3rem;
+  color: white;
 }
 
 .nav-letters {
