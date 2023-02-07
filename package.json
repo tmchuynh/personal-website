@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/tmchuynh/personal-website#readme",
   "dependencies": {
+    "foundation-sites": "^6.7.5",
     "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.4"
   }
 }
