@@ -7,13 +7,13 @@ var obj = new Array();
  */
 
 $.getJSON('https://api.github.com/users/tmchuynh/repos', (data) => {
-    console.log(data);
+    // console.log(data);
 
     data.forEach((element) => {
 
         if (element.fork == false) {
             $.getJSON(element.languages_url, (data) => {
-                console.log(Object.keys(data))
+                // console.log(Object.keys(data))
 
                 populate(element.name, element.pushed_at, Object.keys(data), element);
             })
@@ -52,7 +52,7 @@ function populate(name, updated, languages, element) {
     card.setAttribute("data-bs-target", "#offcanvas");
     card.setAttribute("aria-controls", "offcanvasExample");
 
-    console.log(element.html_url);
+    // console.log(element.html_url);
 
     card.addEventListener("click", () => moduleCreator(name, languages, element.html_url));
 
@@ -97,7 +97,6 @@ function addLanguages(languages, card) {
 
     var icon = document.createElement("i");
     icon.classList.add("bx");
-    console.log("read");
     if (languages.length == 0) {
         icon.innerHTML = " ";
     }
