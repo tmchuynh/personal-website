@@ -19,7 +19,8 @@
   "homepage": "https://github.com/tmchuynh/personal-website#readme",
   "dependencies": {
     "foundation-sites": "^6.7.5",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "octokit": "^2.0.14"
   },
   "devDependencies": {
     "postcss-import": "^15.1.0",
