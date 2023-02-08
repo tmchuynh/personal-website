@@ -33,6 +33,27 @@ function moduleCreator(name, languages, url) {
     var link = document.querySelector('.offcanvas-body a');
     link.setAttribute("href", url);
     link.innerHTML = String(url);
+
+
+    // Create container for the screenshots of the project
+    var container = document.createElement('div');
+    var container_title = document.createElement('h3');
+    container_title.innerHTML = "Screenshots:";
+    container.appendChild(container_title);
+    var container_body = document.createElement('div');
+    var container_body_img = document.createElement('img');
+    var screenshot_url = url("../screenshots/" + name + ".png");
+    container_body_img.setAttribute("src", screenshot_url);
+    container_body.appendChild(container_body_img);
+    container.appendChild(container_body);
+    module_container.appendChild(container);
+
+    // Create container for the project README
+    var container_readme = document.createElement('div');
+    var container_readme_text = document.createElement('p');
+    container_readme_text.innerHTML = url("../readme/" + name + ".md");
+    container_readme.appendChild(container_readme_text);
+    module_container.appendChild(container_readme);
 }
 
 /**
