@@ -1,15 +1,15 @@
-/**
- * Get repository info from GitHub API 
- */
-$.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
-    console.log(data);
+// /**
+//  * Get repository info from GitHub API 
+//  */
+// $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
+//     console.log(data);
 
-    data.forEach((element) => {
-        if (element.name == "tmchuynh") {
-            console.log(element);
+//     data.forEach((element) => {
+//         if (element.name == "tmchuynh") {
+//             console.log(element);
 
             
-        }
+//         }
     
-    })
-})
+//     })
+// })

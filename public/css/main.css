@@ -280,37 +280,9 @@ section {
   }
 }
 
-@media (max-width: 320px) {
-  #devto-articles+h4 {
-    padding-left: 3rem;
-  }
-}
-
 .section-title p {
   margin: auto;
   width: 90%;
-}
-
-/*--------------------------------------------------------------
-  # BackToTop Button
-  --------------------------------------------------------------*/
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 2rem;
-  right: 3.5rem;
-  z-index: 99;
-  outline: none;
-  cursor: pointer;
-  margin: 2rem;
-  border-radius: 1rem;
-  font-size: 1.5rem;
-}
-
-@media (max-width: 420px) {
-  #backToTop {
-    right: 1rem;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -338,8 +310,9 @@ section {
   width: 100%;
 }
 
-.contact-info {
-  text-align: center;
+.introduction {
+  text-align: left;
+  padding: 0;
 }
 
 @media (max-width: 1200px) {
@@ -348,8 +321,7 @@ section {
     padding: 0rem 3rem 1rem 3rem;
   }
 
-  .devcard,
-  #blog-list {
+  .devcard {
     width: 90%;
     margin: auto;
     justify-content: center;
@@ -405,6 +377,32 @@ section {
   #threeD-commit {
     width: 75%;
   }
+}
+
+/*--------------------------------------------------------------
+  # Experience
+  --------------------------------------------------------------*/
+.experience {
+  margin: 40px 0;
+}
+
+.experience section {
+  margin: 20px 0;
+}
+
+.skills-list {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skills-list .btn {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  margin-bottom: 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
