@@ -11,9 +11,9 @@
   scroll-behavior: smooth;
   /*variables*/
   /* Colors */
-  --orange: #8F250C;
-  --dark-grey: #4d4d4d;
-  --light-grey: #F8F7F9;
+  --light-blue: #87e3fe;
+  --brown: #6f5731;
+  --dark-blue: #25569b;
   --black: #0f0e0e;
   /* Typography */
   --font-family: 'Playfair Display', serif;
@@ -73,11 +73,11 @@ li {
   font-size: var(--spacing-medium);
   line-height: 1.25;
   margin: 15px;
-  background-color: var(--light-grey);
+  background-color: var(--dark-blue);
   border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: var(--bold-font-weight);
-  color: var(--dark-grey);
+  color: var(--brown);
   text-align: center;
   box-shadow: inset 0 0 0 2px var(--logo-red);
   transition: var(--hover-transition);
@@ -94,16 +94,16 @@ img {
   # Links
 --------------------------------------------------------------*/
 a {
-  color: var(--light-grey);
+  color: var(--dark-blue);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .btn:focus {
-  box-shadow: inset 0 0 0 2px var(--dark-grey);
+  box-shadow: inset 0 0 0 2px var(--brown);
   outline: none;
 }
 
@@ -116,7 +116,7 @@ a:hover {
 --------------------------------------------------------------*/
 
 .bg-body-tertiary {
-  background-color: var(--dark-grey) !important;
+  background-color: var(--brown) !important;
   box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
   -moz-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
   -webkit-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
@@ -138,14 +138,14 @@ a:hover {
 .navbar-nav a:hover,
 .navbar-nav a:focus,
 .navbar-nav a:hover i {
-  color: var(--light-grey);
+  color: var(--dark-blue);
   outline: none;
 }
 
 .navbar-nav i {
   font-size: 14px;
   margin-left: 20px;
-  color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .navbar-toggler {
@@ -178,7 +178,7 @@ a:hover {
 }
 
 .nav-letters:hover {
-  color: var(--orange);
+  color: var(--light-blue);
 }
 
 @media (min-width: 1400px) {
@@ -192,7 +192,7 @@ a:hover {
 }
 
 #navbar-brand-text:hover {
-  color: var(--orange);
+  color: var(--light-blue);
 }
 
 /********************************
@@ -203,7 +203,7 @@ a:hover {
 }
 
 .offcanvas a:hover {
-  color: var(--orange);
+  color: var(--light-blue);
 }
 
 /*--------------------------------------------------------------
@@ -230,7 +230,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--orange);
+  color: var(--dark-blue);
 }
 
 .section-title h2::before {
@@ -239,7 +239,7 @@ section {
   display: block;
   width: 125px;
   height: 1px;
-  background: var(--orange);
+  background: var(--brown);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -250,7 +250,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--orange);
+  background: var(--dark-blue);
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -261,7 +261,7 @@ section {
   margin-top: 15px;
   padding-left: 6rem;
   position: relative;
-  color: var(--dark-grey);
+  color: var(--brown);
   font-weight: bold;
   text-align: start;
   font-size: 24px;
@@ -411,22 +411,22 @@ section {
   # Footer
   --------------------------------------------------------------*/
 .site-footer {
-  background-color: var(--dark-grey);
+  background-color: var(--brown);
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 32px;
-  color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .site-footer hr {
   /*line across*/
-  border-top-color: var(--light-grey);
+  border-top-color: var(--light-blue);
   opacity: 0.5;
 }
 
 .site-footer h6 {
   /*category names*/
-  color: var(--orange);
+  color: var(--light-blue);
   text-transform: uppercase;
   font-size: 3rem;
   margin-top: 5px;
@@ -456,13 +456,14 @@ section {
 
 .site-footer a {
   /*the hyperlinks*/
-  color: var(--light-grey);
+  color: var(--light-blue);
   text-decoration: none;
+  letter-spacing: 5px;
   margin-right: 10px;
 }
 
 .site-footer .vanish {
-  color: var(--light-grey);
+  color: var(--black);
   display: none;
   font-size: 22px;
 }
@@ -513,7 +514,7 @@ section {
 
 @media only screen and (max-width: 991px) {
   .site-footer .vanish {
-    color: var(--light-grey);
+    color: var(--dark-blue);
     display: inline-block;
     align-items: center;
     position: relative;
@@ -590,7 +591,7 @@ section {
 
 .social-icons a.github:hover {
   background-color: #fff;
-  color: var(--dark-grey);
+  color: var(--brown);
 }
 
 .social-icons a.gmail:hover {
@@ -621,7 +622,7 @@ section {
 
   .social-icons a.github {
     background-color: #fff;
-    color: var(--dark-grey);
+    color: grey;
   }
 
   .social-icons a.gmail {
