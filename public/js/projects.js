@@ -1,32 +1,24 @@
 var project_container = document.getElementById('project-list');
+var cards = document.querySelectorAll(".cards");
 var module_container = document.querySelector('.offcanvas');
 var module_body = document.querySelector('.offcanvas-body');
 var module_title = document.querySelector('.offcanvas-title');
 var information = document.getElementsByClassName("large-container")[0];
 var obj = new Array();
-// var project_name, pushed_at, description, image, link, type, id, url, languages, element_;
-
+var el_data, languages_list;
 /**
  * Get repository info from GitHub API 
  */
 
 $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     console.log(data);
-
     data.forEach((element) => {
+        el_data = element;
+
 
         if (element.fork == false) {
             $.getJSON(element.languages_url, (data) => {
-                // console.log(Object.keys(data))
-
-                // project_name = element.name;
-                // pushed_at = element.pushed_at;
-                // description = element.description;
-                // languages = Object.keys(data);
-                // url = element.html_url;
-                // element_ = element;
-
-
+                languages_list = Object.keys(data);
 
                 populate(element.name, element.pushed_at, Object.keys(data), element);
 
@@ -39,13 +31,18 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
                             moduleCreator(element.name, Object.keys(data).element.html_url, element, htmlfiles.html_url)
                         }
                     });
-                    moduleCreatorDefault(element.name, Object.keys(data), element.html_url, element)
 
                 }
             })
         }
     })
 })
+
+cards.forEach(element => {
+    element.addEventListener('click', () => {
+        moduleCreatorDefault(el_data.name, languages_list, el_data.html_url, el_data);
+    })
+});
 
 /*
  * Create module with project information
@@ -57,7 +54,7 @@ function moduleCreatorDefault(name, languages, url, element) {
     link.innerHTML = url;
     module_body.appendChild(link);
 
-    // console.log(name, languages, url);
+    console.log(name, languages, url);
     var name_parts = name.replace("-", " ");
     var title = document.querySelector('.offcanvas-title');
     name_parts = toTitleCase(name_parts);
@@ -68,7 +65,6 @@ function moduleCreatorDefault(name, languages, url, element) {
     var large_container = document.createElement('div');
     large_container.classList.add('large-container');
     console.log(large_container);
-
 
     // Create container for the screenshots of the project
     var container = document.createElement('div');
@@ -86,18 +82,6 @@ function moduleCreatorDefault(name, languages, url, element) {
         container.appendChild(container_body);
         large_container.appendChild(container);
     }
-
-    // // Create container for the project README
-    // var container_readme = document.createElement('div');
-    // var container_readme_text = document.createElement('p');
-    // // var readmes_url = "../public/readmes/" + name + ".html";
-
-    // // if (checkFileExist(readmes_url)) {
-    // //     container_readme_text.innerHTML = "../readmes/" + name + ".html";
-    // //     container_readme.appendChild(container_readme_text);
-    // //     large_container.appendChild(container_readme);
-    // // }
-
 
     module_body.appendChild(large_container);
 }
@@ -146,7 +130,6 @@ function moduleCreator(name, languages, url, element, readme_url) {
     container_readme.appendChild(container_readme_text);
     large_container.appendChild(container_readme);
 
-
     module_body.appendChild(large_container);
 }
 
@@ -167,8 +150,6 @@ function populate(name, updated, languages, element) {
     card.setAttribute("data-bs-toggle", "offcanvas");
     card.setAttribute("data-bs-target", "#offcanvas");
     card.setAttribute("aria-controls", "offcanvasExample");
-
-    // console.log(element.html_url);
 
     card.addEventListener("click", () => moduleCreator(name, languages, element.html_url));
 
