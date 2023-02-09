@@ -12,6 +12,6 @@ function onReady(callback) {
   }
   
   onReady(function() {
-    setVisible('.page', true);
+    setVisible('.img-screenshot', true);
     setVisible('#loading', false);
   });
