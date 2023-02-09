@@ -1,15 +1,17 @@
-// /**
-//  * Get repository info from GitHub API 
-//  */
-// $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
-//     console.log(data);
-
-//     data.forEach((element) => {
-//         if (element.name == "tmchuynh") {
-//             console.log(element);
-
-            
-//         }
-    
-//     })
-// })
+function onReady(callback) {
+    var intervalId = window.setInterval(function() {
+      if (document.getElementsByTagName('body')[0] !== undefined) {
+        window.clearInterval(intervalId);
+        callback.call(this);
+      }
+    }, 1000);
+  }
+  
+  function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? 'block' : 'none';
+  }
+  
+  onReady(function() {
+    setVisible('.page', true);
+    setVisible('#loading', false);
+  });
