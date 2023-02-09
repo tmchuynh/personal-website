@@ -1,9 +1,14 @@
+var screenshots = document.querySelectorAll(".img-screenshot");
+
 function onReady(callback) {
     var intervalId = window.setInterval(function () {
-        if (document.querySelectorAll(".img-screenshot") !== undefined) {
-            window.clearInterval(intervalId);
-            callback.call(this);
-        }
+        screenshots.forEach(element => {
+            if (element !== undefined) {
+                window.clearInterval(intervalId);
+                callback.call(this);
+            }
+        });
+        
     }, 1000);
 }
 
