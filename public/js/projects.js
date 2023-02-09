@@ -1,5 +1,6 @@
 var project_container = document.getElementById('project-list');
 var cards = document.querySelectorAll(".cards");
+var screenshots = document.querySelectorAll(".screenshots");
 var obj = new Array();
 
 /**
@@ -36,10 +37,6 @@ function populate(name, updated, languages, element) {
 
     var card = document.createElement("div");
     card.classList.add("cards");
-    card.setAttribute("type", "button");
-    card.setAttribute("data-bs-toggle", "offcanvas");
-    card.setAttribute("data-bs-target", "#offcanvas");
-    card.setAttribute("aria-controls", "offcanvasExample");
 
     addLanguages(languages, card);
 
@@ -64,23 +61,39 @@ function populate(name, updated, languages, element) {
     if (checkFileExist("../public/screenshots/" + name + ".png")) {
         var img = document.createElement("img");
         img.classList.add("img-screenshot");
+        // img.classList.add("hide");
         img.setAttribute("src", "../public/screenshots/" + name + ".png");
         img.setAttribute("alt", name);
         card.appendChild(img);
+
+        cards.forEach(card => {
+            card.addEventListener("mouseover", (e) => {
+                screenshots.forEach(imgs => {
+                    imgs.classList.remove("hide");
+                })
+
+            })
+            
+        });
     }
     
+    var date = document.createElement("div");
+    date.classList.add("date");
 
     var subtitle = document.createElement("code");
     subtitle.classList.add("last-updated");
     subtitle.classList.add("mb-0");
     subtitle.innerHTML = "Last updated on:"
-    card.appendChild(subtitle);
+    date.appendChild(subtitle);
 
     var last_updated = document.createElement("code");
     last_updated.innerHTML = month + "/" + day + "/" + year;
     last_updated.classList.add("last-updated");
     last_updated.classList.add("mt-0");
-    card.appendChild(last_updated);
+    date.appendChild(last_updated);
+
+    card.appendChild(date);
+
 
     project_container.appendChild(card);
 }
