@@ -12,7 +12,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     data.forEach((element) => {
 
 
-        if (element.fork == false) {
+        if (element.fork == false && element.topics.length > 0) {
             $.getJSON(element.languages_url, (data) => {
 
                 populate(element.name, element.pushed_at, Object.keys(data), element);
@@ -71,8 +71,8 @@ function populate(name, updated, languages, element) {
     }
     var shadow_r = document.createElement("div");
     shadow.appendChild(shadow_r);
-card.appendChild(loading);
-    
+    card.appendChild(loading);
+
 
     // console.log(updated);
     var date = updated.split("T")[0]
@@ -101,10 +101,10 @@ card.appendChild(loading);
                 })
 
             })
-            
+
         });
     }
-    
+
     var date = document.createElement("div");
     date.classList.add("date");
 
