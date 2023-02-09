@@ -1,17 +1,17 @@
 function onReady(callback) {
-    var intervalId = window.setInterval(function() {
-      if (document.getElementsByTagName('body')[0] !== undefined) {
-        window.clearInterval(intervalId);
-        callback.call(this);
-      }
+    var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+        }
     }, 1000);
-  }
-  
-  function setVisible(selector, visible) {
+}
+
+function setVisible(selector, visible) {
     document.querySelector(selector).style.display = visible ? 'block' : 'none';
-  }
-  
-  onReady(function() {
+}
+
+onReady(function () {
     setVisible('.img-screenshot', true);
     setVisible('#loading', false);
-  });
+});
