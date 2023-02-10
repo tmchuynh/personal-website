@@ -380,6 +380,21 @@ section {
 }
 
 /*--------------------------------------------------------------
+  # Commit Graph
+  --------------------------------------------------------------*/
+.git-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.git-history img {
+  width: 75%;
+}
+
+/*--------------------------------------------------------------
   # Experience
   --------------------------------------------------------------*/
 .experience {
