@@ -3,10 +3,8 @@ var cards = document.querySelectorAll(".cards");
 var screenshots = document.querySelectorAll(".screenshots");
 var obj = new Array();
 
-/**
- * Get repository info from GitHub API 
- */
-
+/* Using the GitHub API to get the list of repositories and then populate the project cards with the
+information. */
 $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     // console.log(data);
     data.forEach((element) => {
@@ -21,16 +19,13 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     })
 })
 
-
-
-
 /**
- * Populate repository project cards with language icons respectively
- * 
- * @param {any} name = Project name
- * @param {any} url = GitHub URL link
- * @param {any} updated = Last commit / push date MM/DD/YYYY
- * @param {any} languages = Programming languages used
+ * It creates a card for each project and populates it with the project's name, languages, last updated
+ * date, and a screenshot
+ * @param name - The name of the project
+ * @param updated - The date the project was last updated
+ * @param languages - an array of languages used in the project
+ * @param element - the element of the array of objects
  */
 function populate(name, updated, languages, element) {
     // console.log(name)
@@ -126,6 +121,18 @@ function populate(name, updated, languages, element) {
     project_container.appendChild(card);
 }
 
+/**
+ * It takes in an array of languages and a card element, and then it creates a div element with the
+ * class "d-flex" and "languages_list" and then it creates an icon element with the class "bx" and then
+ * it checks if the array of languages is empty, and if it is, it sets the innerHTML of the icon
+ * element to a space, and then it checks if the array of languages includes "HTML" and if it does, it
+ * creates an icon element with the class "bx" and "bxl-html5" and "html" and then it appends the icon
+ * element to the div element, and then it checks if the array of languages includes "Python" and if it
+ * does, it creates an icon element with the class "bx" and "bxl-python" and "python" and then it
+ * appends the icon element to the div element, and then it checks if the array of languages includes "
+ * @param languages - an array of strings that represent the languages used in the project
+ * @param card - The card element that the languages will be added to.
+ */
 function addLanguages(languages, card) {
     var lang_icons = document.createElement("div");
     lang_icons.classList.add("d-flex");
@@ -200,6 +207,11 @@ function addLanguages(languages, card) {
     card.appendChild(lang_icons);
 }
 
+/**
+ * It takes a string, finds all the words in it, and capitalizes the first letter of each word
+ * @param str - The string to be converted.
+ * @returns The first letter of each word is capitalized and the rest of the letters are lowercase.
+ */
 function toTitleCase(str) {
     return str.replace(
         /\w\S*/g,
@@ -209,6 +221,12 @@ function toTitleCase(str) {
     );
 }
 
+/**
+ * It creates an XMLHttpRequest object, sends a HEAD request to the URL, and returns true if the status
+ * is not 404
+ * @param urlToFile - The URL to the file you want to check.
+ * @returns a boolean value.
+ */
 function checkFileExist(urlToFile) {
     var xhr = new XMLHttpRequest();
     xhr.open('HEAD', urlToFile, false);
