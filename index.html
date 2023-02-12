@@ -16,9 +16,7 @@
 
   <link href="public/css/main.css" rel="stylesheet">
   <link href="public/css/projects.css" rel="stylesheet">
-  <link href="public/css/loading.css" rel="stylesheet">
-
-
+  <link href="public/css/articles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,6 +87,16 @@
 
             </div>
           </div>
+          <div>
+            <p>
+              Check out my latest work here:
+            </p>
+            <div class="skills-list">
+              <a href="https://github.com/tmchuynh" class="btn">GitHub</a>
+        
+              <a href="https://dev.to/tmchuynh" class="btn">dev.to</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -97,14 +105,7 @@
 
   <div class="section-title">
     <h2 id="project-tiles">Favorite Projects</h2>
-    <p>
-      Check out my latest work here:
-    </p>
-    <div class="skills-list" style="justify-content: center; margin-left: 0px;">
-      <a href="https://github.com/tmchuynh" class="btn">GitHub</a>
 
-      <a href="https://dev.to/tmchuynh" class="btn">dev.to</a>
-    </div>
     <div style="position: relative;">
       <ul id="project-list">
 
@@ -112,6 +113,16 @@
     </div>
 
   </div>
+
+  <div class="section-title pt-5">
+    <h2 id="devto-articles">Popular DEV.to Articles</h2>
+
+    <!--Article cards-->
+    <ul id="featured-articles" class="mb-5">
+
+
+    </ul>
+</div>
 
   <footer class="site-footer">
     <div class="container">
@@ -184,6 +195,21 @@
     crossorigin="anonymous"></script>
   <script type="module" src="public/js/projects.js"></script>
   <script src="public/js/activity.js"></script>
+  <script src="public/js/feature.js"></script>
+
 </body>
 
 </html>
+
+<template id="blog-item">
+  <li>
+      <a class="url">
+          <img class="cover" alt="cover image">
+          <div class="info">
+              <h4 class="title"></h4>
+              <code class="updated"></code>
+              <p class="reading-time"></p>
+          </div>
+      </a>
+  </li>
+</template>
