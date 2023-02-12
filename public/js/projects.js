@@ -42,33 +42,6 @@ function populate(name, updated, languages, element) {
     title.innerHTML = name_parts;
     card.appendChild(title);
 
-    var loading = document.createElement("div");
-    loading.setAttribute("aria-busy", "true");
-    loading.setAttribute("aria-label", "Loading...");
-    loading.setAttribute("role", "progressbar");
-    var swing = document.createElement("div");
-    loading.appendChild(swing);
-    var swing1 = document.createElement("div");
-    swing.appendChild(swing1);
-    for (var i = 0; i < 6; i++) {
-        var _ = document.createElement("div");
-        swing1.appendChild(_);
-    }
-    var swing_r = document.createElement("div");
-    swing.appendChild(swing_r);
-    var shadow = document.createElement("div");
-    loading.appendChild(shadow);
-    var shadow_l = document.createElement("div");
-    shadow.appendChild(shadow_l);
-    for (var i = 0; i < 6; i++) {
-        var _ = document.createElement("div");
-        shadow_l.appendChild(_);
-    }
-    var shadow_r = document.createElement("div");
-    shadow.appendChild(shadow_r);
-    card.appendChild(loading);
-
-
     // console.log(updated);
     var date = updated.split("T")[0]
     // console.log(date);
