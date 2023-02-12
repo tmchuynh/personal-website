@@ -44,6 +44,7 @@
 
 #project-list .cards .last-updated {
   color: var(--grey);
+  font-family: 'Roboto Mono', monospace;
 }
 
 @media (max-width: 420px) {

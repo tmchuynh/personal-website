@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
 #featured-articles,
 #blog-list {
     list-style: none;
@@ -80,6 +82,7 @@
     color: var(--dark-blue);
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Mono', monospace;
     position: relative;
     top: 1rem;
 }
@@ -88,5 +91,7 @@
 #blog-list .info .reading-time {
     color: var(--dark-blue);
     position: relative;
-    bottom: -60px;
+    font-family: 'Roboto Mono', monospace;
+    bottom: -50px;
+    font-size: .75rem;
 }
