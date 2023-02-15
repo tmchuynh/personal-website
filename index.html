@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <link href="public/css/main.css" rel="stylesheet">
+  <link href="public/css/arrows.css" rel="stylesheet">
   <link href="public/css/projects.css" rel="stylesheet">
   <link href="public/css/articles.css" rel="stylesheet">
 </head>
@@ -29,11 +30,33 @@
   </nav>
 
   <div class="container-fluid p-0 d-xl-flex d-block introduction">
-    <div class="devcard d-flex">
+    <div class="devcard">
       <a href="https://app.daily.dev/tmchuynh"><img
           src="https://api.daily.dev/devcards/9b4d6fa7ff784d3297e67d1edf73fc06.png?r=mg3" width="500"
           alt="Tina Huynh's Dev Card" /></a>
+      <div class="arrows">
+        <div class="keys">
+          <div class="up arr"><i class="fa fa-arrow-up"></i></div>
+          <br />
+          <div class="left arr"><i class="fa fa-arrow-left"></i></div>
+          <div class="down arr"><i class="fa fa-arrow-down"></i></div>
+          <div class="right arr"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="names">
+          <div class="uptext"></div>
+          <div class="downtext"></div>
+          <div class="lefttext"></div>
+          <div class="righttext"></div>
+        </div>
+      </div>
     </div>
+
+
+
 
     <!--social badge icons-->
     <div class="d-xl-flex d-block info-summary">
@@ -107,6 +130,8 @@
         </div>
       </div>
     </div>
+
+
 
   </div>
 
@@ -204,6 +229,7 @@
   <script type="module" src="public/js/projects.js"></script>
   <script src="public/js/activity.js"></script>
   <script src="public/js/feature.js"></script>
+  <script src="public/js/arrows.js"></script>
 
 </body>
 
