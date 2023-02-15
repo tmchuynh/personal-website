@@ -14,7 +14,7 @@
   --light-blue: #87e3fe;
   --grey: #707070;
   --dark-blue: #25569b;
-  --black: #0f0e0e;
+  --white: rgb(238, 236, 236);
   /* Typography */
   --font-family: 'Playfair Display', serif;
   --font-family-0: 'PT Sans Narrow', sans-serif;
@@ -135,76 +135,10 @@ a:hover {
   }
 }
 
-.navbar-nav a:hover,
-.navbar-nav a:focus,
-.navbar-nav a:hover i {
-  color: var(--dark-blue);
-  outline: none;
-}
-
-.navbar-nav i {
-  font-size: 14px;
-  margin-left: 20px;
-  color: var(--grey);
-}
-
-.navbar-toggler {
-  padding-right: 2.5rem;
-  width: 1rem;
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.bx-menu-alt-right {
-  padding-right: 1rem;
-  font-size: 3rem;
+.navbar-brand {
   color: white;
 }
 
-.nav-letters {
-  top: 36px;
-  position: absolute;
-  display: inline;
-  color: var(--white);
-  font-size: 27px;
-  visibility: hidden;
-}
-
-#letters {
-  top: 14px;
-}
-
-.nav-letters:hover {
-  color: var(--light-blue);
-}
-
-@media (min-width: 1400px) {
-  .nav-letters {
-    visibility: visible;
-  }
-}
-
-#navbar-brand-text {
-  color: white;
-}
-
-#navbar-brand-text:hover {
-  color: var(--light-blue);
-}
-
-/********************************
- # Offcanvas
-*********************************/
-.offcanvas a {
-  color: var(--black);
-}
-
-.offcanvas a:hover {
-  color: var(--light-blue);
-}
 
 /*--------------------------------------------------------------
   # Sections General
@@ -449,7 +383,7 @@ section {
 
 .site-footer p {
   text-align: justify;
-  color: var(--black)
+  color: var(--white)
 }
 
 .footer-links {
@@ -476,7 +410,7 @@ section {
 }
 
 .site-footer .vanish {
-  color: var(--black);
+  color: var(--white);
   display: none;
   font-size: 22px;
 }
