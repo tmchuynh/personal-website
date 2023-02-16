@@ -344,6 +344,11 @@ section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.skills-list.links {
+  display: inline-flex;
 }
 
 .skills-list .btn {
@@ -352,6 +357,14 @@ section {
   margin-bottom: 5px;
   border-radius: 2px;
   text-transform: uppercase;
+  height: fit-content;
+}
+
+.skills-list .keys {
+  position: absolute;
+  top: -44px;
+  left: 239px;
+  height: fit-content;
 }
 
 /*--------------------------------------------------------------
