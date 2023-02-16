@@ -401,6 +401,10 @@ section {
   position: relative;
 }
 
+.site-footer .keys {
+  height: 5rem;
+}
+
 .site-footer a {
   /*the hyperlinks*/
   color: var(--light-blue);
