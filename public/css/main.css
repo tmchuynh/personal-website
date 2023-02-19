@@ -226,6 +226,13 @@ section {
   padding: 0rem 0rem 2rem 0rem;
 }
 
+.limit {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .devcard {
   justify-content: right;
   padding: 2rem;
