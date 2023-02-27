@@ -30,6 +30,8 @@ function populate(name, updated, languages, element) {
 
     var card = document.createElement("div");
     card.classList.add("cards");
+    card.classList.add("animated");
+    card.classList.add("fadeIn");
 
     addLanguages(languages, card);
 
