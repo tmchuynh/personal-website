@@ -9,6 +9,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     // console.log(data);
     data.forEach((element) => {
         if (element.fork == false && element.topics.length > 0) {
+
             $.getJSON(element.languages_url, (data) => {
 
                 populate(element.name, element.pushed_at, Object.keys(data), element);
@@ -37,9 +38,16 @@ function populate(name, updated, languages, element) {
 
     var title = document.createElement("a");
     title.classList.add("title");
-    title.setAttribute("href", element.html_url);
     var name_parts = name.replace("-", " ");
     title.innerHTML = name_parts;
+
+    // title.setAttribute("href", element.html_url);
+    title.addEventListener("click", function (e) {
+        window.localStorage.setItem("target", element.html_url);
+
+        window.location.href = "../repo.html";
+    });
+
     card.appendChild(title);
 
     // console.log(updated);
