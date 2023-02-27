@@ -8,8 +8,6 @@ information. */
 $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
     // console.log(data);
     data.forEach((element) => {
-
-
         if (element.fork == false && element.topics.length > 0) {
             $.getJSON(element.languages_url, (data) => {
 
