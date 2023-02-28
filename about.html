@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tmchuynh</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link href="public/css/main.css" rel="stylesheet">
+    <link href="public/css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg d-flex bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TMCHUYNH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mission.html">My Mission</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid align-items-start d-md-flex d-block">
+        <div class="container align-items-center d-flex flex-column flex-wrap p-4">
+            <img class="img-fluid w-75 align-self-center p-3" src="public/imgs/me.png">
+            <div class="contact text-center">
+                <div class="skills-list links m-0 mb-4">
+                    <a href="mailto:tinamchuynh@gmail.com" class="btn">GMAIL</a>
+                    <a href="https://drive.google.com/file/d/1oZKmbfU1IQHL1ve8uMOdhc96M6Fbja-w/view?usp=sharing"
+                        class="btn">RESUME</a>
+                    <a href="https://github.com/tmchuynh" class="btn">GITHUB</a>
+                </div>
+                <div id="map" style="width: 27rem; height: 25rem;"></div>
+            </div>
+        </div>
+
+        <div class="container flex-wrap pt-5">
+            <h3>The Beginning</h3>
+            <p>Discovering how much of an impact technology has on society was a transformative experience for me. I
+                used to take for granted the role that technology plays in our lives, from the smartphones we use to the
+                internet that connects us all. However, as I delved deeper into the subject, I started to realize just
+                how much of an impact technology has on our society. From the way we work and communicate to how we
+                entertain ourselves and stay informed, technology has transformed virtually every aspect of our daily
+                lives. Furthermore, as technology continues to advance at a rapid pace, it is increasingly important to
+                understand its impact on society and to consider the ethical and social implications of these
+                advancements.</p>
+            <hr>
+            <h3>Why I Chose the Tech Industry</h3>
+            <p>Technology has made it easier for people to access health-related information, which can help them live
+                better and healthier lives. With the rise of health-related mobile applications and wearables, people
+                can now monitor their physical activity, track their calorie intake, and receive personalized health
+                recommendations. These technologies not only encourage people to live healthier lifestyles but also
+                provide them with the tools and resources to do so. It has brought communities together and encouraged
+                society to live better and healthier lives. It has created a platform for people to connect with each
+                other, access health-related information and services, and participate in community activities. As
+                technology continues to advance, it is crucial to ensure that everyone has access to these technologies
+                to promote inclusivity and equity in our society.
+            </p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            A Passion for Teaching
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>I grew up volunteering at a Gifted Students Academy at UCI starting in middle school.
+                                After high school graduation and have fallen in love with mentoring/teaching in terms of
+                                biology and chemistry, I navigated over to teaching closer to my field of interest -
+                                coding, engineering, and robotics. I taught elementary, middle, and high school students
+                                for years and loved every minute.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What Retail Taught Me
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>What's a self-taught software engineer doing working retail? Learning customer service
+                                and project management skills such as task delegations and time management. I learned to
+                                work with those I was displeased working with with a happy smile.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What CodingDojo Taught Me
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>A piece of paper will always be just that, a piece of paper, but its worth is in the
+                                skills a person had developed earning such paper. It's not the time, money, or headache
+                                that you put into doing projects you thought were tedious, annoying, or a waste of time.
+                                It's not the hours you spent working with people you disliked. At the end of the day,
+                                it's what you learned that will make you a better software engineer in the future. Which
+                                means, it's everything all combined. All the good and the bad, because those aren't the
+                                worse days you'll face and you'll have better days to come.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="drag-container">
+                <div id="spin-container">
+                    <!-- Add your images (or video) here -->
+                    <img src="public/imgs/me2.png" alt="">
+                    <img src="public/imgs/me3.png" alt="">
+                    <img src="public/imgs/me4.png" alt="">
+                    <img src="public/imgs/me5.png" alt="">
+                    <img src="public/imgs/me6.png" alt="">
+                    <img src="public/imgs/me7.png" alt="">
+                    <img src="public/imgs/me8.png" alt="">
+                </div>
+                <div id="ground"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-fluid d-flex flex-wrap">
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row ps-3">
+
+                <div class="col-md-4 col-sm-12">
+                    <p>
+                        The tech industry is on the rise and the possibilities are endless! The future is filled with
+                        exciting new
+                        advancements and innovations that will shape the way we live, interact, and connect with one
+                        another. Being
+                        a part of this revolution is essential, as the impact of technology on our lives will be
+                        profound and
+                        long-lasting. Together, as a society, we are pushing the limits of what is possible and reaching
+                        for the
+                        stars.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>
+                        Imagine a world where the futuristic technologies once only seen in science fiction movies are
+                        now a
+                        reality. From holographic keyboards and touchscreen tables to flying cars, the tech industry is
+                        making our
+                        wildest dreams come true. Advances in machine learning, such as self-driving cars, virtual
+                        personal
+                        assistants, and even robotic surgeries, are changing the way we live and work for the better.
+                        With each new
+                        breakthrough, we are forging a brighter future and the possibilities are truly endless.
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p>
+                        The driving force behind these advancements are the pioneers of the tech industry like Geoff
+                        Hinton, Yoshua
+                        Bengio, Yann LeCun, and Jurgen Schmidhuber, who never lost faith in neural networks despite
+                        opposition from
+                        their peers in the 1990s and 2000s. These innovators are a shining example of what can be
+                        achieved with
+                        determination and a strong vision.
+                    </p>
+                    <div class="keys">
+                        <img src="public/imgs/keys.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+        </div>
+
+        <!--social media icons-->
+        <div class="container">
+            <div class="row ps-3">
+                <div class="col-md-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="codepen" href="https://codepen.io/tmchuynh"><i class='bx bxl-codepen'></i></a>
+                        </li>
+                        <li><a class="linkedin" href="hhttps://www.linkedin.com/in/tinamchuynh/"><i
+                                    class='bx bxl-linkedin-square'></i></a></li>
+                        <li><a class="github" href="https://github.com/tmchuynh"><i class='bx bxl-github'></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/tinamchuynh"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li><a class="gmail" href="mailto:tinamchuynh@gmail.com"><i class='bx bxs-envelope'></i></a>
+                        </li>
+                        <li><a class="devto" href="https://dev.to/tmchuynh"><i class='bx bxl-dev-to'></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-xs-12 mt-md-3">
+                    <p class="copyright-text">
+                        Copyright &copy; 2022 All Rights Reserved by <a href="https://www.linkedin.com/in/tinamchuynh/"
+                            style="text-decoration: underline;">Tina Huynh</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="public/js/rotate.js"></script>
+    <script src="public/js/chart.js"></script>
+</body>
+
+</html>
