@@ -1,3 +1,5 @@
+// Bar chart of popularity of languages
+
 new Chart(document.getElementById("barChart"), {
     type: 'bar',
     data: {

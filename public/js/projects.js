@@ -6,12 +6,9 @@ var obj = new Array();
 /* Using the GitHub API to get the list of repositories and then populate the project cards with the
 information. */
 $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
-    // console.log(data);
     data.forEach((element) => {
-        if (element.fork == false) {
-
+        if (element.fork == false && element.topics.length > 0) {
             $.getJSON(element.languages_url, (data) => {
-
                 populate(element.name, element.pushed_at, Object.keys(data), element);
             })
         }
@@ -27,8 +24,6 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
  * @param element - the element of the array of objects
  */
 function populate(name, updated, languages, element) {
-    // console.log(name)
-
     var card = document.createElement("div");
     card.classList.add("cards");
     card.classList.add("animated");
@@ -40,45 +35,22 @@ function populate(name, updated, languages, element) {
     title.classList.add("title");
     var name_parts = name.replace("-", " ");
     title.innerHTML = name_parts;
-
-    // title.setAttribute("href", element.html_url);
-    title.addEventListener("click", function (e) {
-        window.localStorage.setItem("target", element.html_url);
-
-        window.location.href = "../repo.html";
-    });
-
+    title.setAttribute("href", element.html_url);
     card.appendChild(title);
 
-    // console.log(updated);
     var date = updated.split("T")[0]
-    // console.log(date);
     var date_0 = date.split("-");
 
     var year = date_0[0];
     var month = date_0[1];
     var day = date_0[2];
 
-    // console.log(month, " ", day, " ", year)
-
-
     if (checkFileExist("../public/screenshots/" + name + ".png")) {
         var img = document.createElement("img");
         img.classList.add("img-screenshot");
-        // img.classList.add("hide");
         img.setAttribute("src", "../public/screenshots/" + name + ".png");
         img.setAttribute("alt", name);
         card.appendChild(img);
-
-        cards.forEach(card => {
-            card.addEventListener("mouseover", (e) => {
-                screenshots.forEach(imgs => {
-                    imgs.classList.remove("hide");
-                })
-
-            })
-
-        });
     }
 
     var date = document.createElement("div");
@@ -98,19 +70,11 @@ function populate(name, updated, languages, element) {
 
     card.appendChild(date);
 
-
     project_container.appendChild(card);
 }
 
 /**
- * It takes in an array of languages and a card element, and then it creates a div element with the
- * class "d-flex" and "languages_list" and then it creates an icon element with the class "bx" and then
- * it checks if the array of languages is empty, and if it is, it sets the innerHTML of the icon
- * element to a space, and then it checks if the array of languages includes "HTML" and if it does, it
- * creates an icon element with the class "bx" and "bxl-html5" and "html" and then it appends the icon
- * element to the div element, and then it checks if the array of languages includes "Python" and if it
- * does, it creates an icon element with the class "bx" and "bxl-python" and "python" and then it
- * appends the icon element to the div element, and then it checks if the array of languages includes "
+ * Adds the languages to the card as icons from Boxicons
  * @param languages - an array of strings that represent the languages used in the project
  * @param card - The card element that the languages will be added to.
  */

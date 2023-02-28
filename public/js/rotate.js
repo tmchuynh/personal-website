@@ -7,14 +7,6 @@ var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
-/*
-     NOTE:
-       + imgWidth, imgHeight will work for video
-       + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
-       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
-       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
-*/
-
 
 // ===================== start =======================
 // animation start after 1000 miliseconds

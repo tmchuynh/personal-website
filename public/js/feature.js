@@ -3,7 +3,6 @@ const perPage = 10000; //If you have more articles, increase this or add paginat
 var count = 0;
 var left = 0;
 
-
 /**
  * It fetches the articles from the API, then adds them to the page
  */
@@ -13,9 +12,7 @@ const getArticles = async () => {
     const name = data[0].user.name;
     document.querySelectorAll('#featured-article .title').forEach(el => el.textContent = name);
     document.title = `TMCHUYNH`;
-
-    // console.log(data);
-
+    
     for (let article of data) {
         count = addArticle(article);
     }
@@ -24,10 +21,6 @@ const getArticles = async () => {
 /**
  * Creates article cards from DEV.to API informtion
  * Will only display the articles dependent on certain criteria
- * 
- * positive_reaction_count >= 15
- * comments_count > 10
- * 
  * @param {any} article = the information of each article written from DEV.to API
  * @returns the number of articles
  */
@@ -41,7 +34,6 @@ const addArticle = article => {
     let year = parts[0];
     let month = parts[1];
     let day = parts[2];
-    // console.log(article);
     clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
 
     const reading_time = article.reading_time_minutes + " minute read";
@@ -55,13 +47,11 @@ const addArticle = article => {
         clone.querySelector('.cover').src = article.cover_image;
 
         // Only display blog posts with certain criteria 
-        if (article.positive_reactions_count >= 8 || article.comments_count > 5) {
+        if (article.positive_reactions_count >= 3 || article.comments_count > 1) {
             document.querySelector('#featured-articles').appendChild(clone);
         }
-
         count += 1;
     }
-
     return count;
 }
 

@@ -1,3 +1,4 @@
+/* Adding a class to the element when the key is pressed. */
 $(document).keydown(function (e) {
     if (e.which == 37) {
         $('.left').addClass('pressed');
@@ -24,6 +25,7 @@ $(document).keydown(function (e) {
     }
 });
 
+/* Removing the class 'pressed' and the text when the key is released. */
 $(document).keyup(function (e) {
     if (e.which == 37) {
         $('.left').removeClass('pressed');
