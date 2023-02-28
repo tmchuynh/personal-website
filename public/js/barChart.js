@@ -5,6 +5,7 @@ new Chart(document.getElementById("barChart"), {
     data: {
         labels: ["JavaScript", "HTML/CSS","SQL", "Python", "Java"< "Bash/Shell/PowerShell", "C#", "TypeScript", "PHP", "C++", "C", "Go", "Kotlin", "Ruby", "Swift", "R", "Rust", "Objective-C"],
         datasets: [{
+            label: "title",
             data: [69, 63, 60, 42, 38, 34, 32, 28, 25, 20, 18, 10, 8, 7.5, 6.3, 6.1, 5.5, 4.9, 4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -29,17 +30,9 @@ new Chart(document.getElementById("barChart"), {
         }],
     },
     options: {
-        scales: {
-            title: {
-                display: false,
-            },
-        },
-        title: {
-            display: false,
-        },
         plugins: {
             legend: {
-                display: false,
+                display: false
             }
         }
     }
