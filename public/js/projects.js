@@ -5,7 +5,7 @@ var obj = new Array();
 
 /* Using the GitHub API to get the list of repositories and then populate the project cards with the
 information. */
-$.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=53', (data) => {
+$.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=100', (data) => {
     data.forEach((element) => {
         if (element.fork == false && element.topics.length > 0) {
             $.getJSON(element.languages_url, (data) => {
