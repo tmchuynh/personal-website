@@ -1,0 +1,168 @@
+ul.cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5rem;
+  width: 80%;
+  height: 150px;
+}
+
+ul.cloud a {
+  /*   
+    Not supported by any browser at the moment :(
+    --size: attr(data-weight number); 
+    */
+  --size: 4;
+  --color: #a33;
+  color: var(--color);
+  font-size: calc(var(--size) * 0.25rem + 0.5rem);
+  display: block;
+  padding: 0.125rem 0.25rem;
+  position: relative;
+  text-decoration: none;
+  /* 
+    For different tones of a single color
+    opacity: calc((15 - (9 - var(--size))) / 15); 
+    */
+}
+
+ul.cloud a[data-weight="0"] {
+  --size: 0.5;
+}
+
+ul.cloud a[data-weight="1"] {
+  --size: 1;
+}
+
+ul.cloud a[data-weight="2"] {
+  --size: 2;
+}
+
+ul.cloud a[data-weight="3"] {
+  --size: 3;
+}
+
+ul.cloud a[data-weight="4"] {
+  --size: 4;
+}
+
+ul.cloud a[data-weight="5"] {
+  --size: 6;
+}
+
+ul.cloud a[data-weight="6"] {
+  --size: 8;
+}
+
+ul.cloud a[data-weight="7"] {
+  --size: 10;
+}
+
+ul.cloud a[data-weight="8"] {
+  --size: 13;
+}
+
+ul.cloud a[data-weight="9"] {
+  --size: 16;
+}
+
+ul[data-show-value] a::after {
+  content: " (" attr(data-weight) ")";
+  font-size: 1rem;
+}
+
+ul.cloud li:nth-child(2n+1) a {
+  --color: rgb(27, 194, 27);
+}
+
+ul.cloud li:nth-child(3n+1) a {
+  --color: rgb(80, 80, 224);
+}
+
+ul.cloud li:nth-child(4n+1) a {
+  --color: rgb(240, 84, 57);
+}
+
+ul.cloud li:nth-child(5n-1) a {
+  --color: rgb(51, 194, 204);
+}
+
+ul.cloud li:nth-child(6n+1) a {
+  --color: rgb(223, 119, 21);
+}
+
+
+ul.cloud a:focus {
+  outline: 1px dashed;
+}
+
+ul.cloud a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: var(--color);
+  transform: translate(-50%, 0);
+  opacity: 0.15;
+  transition: width 0.25s;
+}
+
+ul.cloud a:focus::before,
+ul.cloud a:hover::before {
+  width: 100%;
+}
+
+@media (prefers-reduced-motion) {
+  ul.cloud * {
+    transition: none !important;
+  }
+}
+.svg-container {
+  position: relative;
+  height: 500px;
+  overflow-x: hidden;
+}
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .35;
+}
+
+#metro {
+  stroke-dasharray: 40 60;
+  animation: metro 17s linear infinite;
+}
+
+#jokeri {
+  stroke-dasharray: 20 60;
+  animation: jokeri 7s linear infinite;
+}
+
+#juna {
+  stroke-dasharray: 40 100;
+  animation: juna 18s linear infinite;
+}
+
+@keyframes juna {
+  to {
+    stroke-dashoffset: 1770;
+  }
+}
+
+@keyframes metro {
+  to {
+    stroke-dashoffset: 1485;
+  }
+}
+
+@keyframes jokeri {
+  to {
+    stroke-dashoffset: 709;
+  }
+}
