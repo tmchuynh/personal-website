@@ -7,7 +7,7 @@ var obj = new Array();
 information. */
 $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=100', (data) => {
     data.forEach((element) => {
-        if (element.fork == false && element.topics.length > 0) {
+        if (element.fork == false && element.topics.length > 0 || element.fork == true && (checkFileExist("../public/screenshots/" + element.name + ".png"))) {
             $.getJSON(element.languages_url, (data) => {
                 populate(element.name, element.pushed_at, Object.keys(data), element);
             })
