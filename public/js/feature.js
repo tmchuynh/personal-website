@@ -12,7 +12,7 @@ const getArticles = async () => {
     const name = data[0].user.name;
     document.querySelectorAll('#featured-article .title').forEach(el => el.textContent = name);
     document.title = `TMCHUYNH`;
-    
+
     for (let article of data) {
         count = addArticle(article);
     }
