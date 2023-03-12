@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+.wrap {
+  width: 1250px;
+  height: 500px;
+  /* position: absolute; */
+}
+code {
+  color: white;
+}
+span.blue {
+  color: #48beef;
+}
+span.comment {
+  color: #7f8c8d;
+}
+span.yellow {
+  color: #f39c12;
+}
+span.green {
+  color:#4eb734;
+}
