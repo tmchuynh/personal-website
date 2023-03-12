@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
     $('#customers-testimonials').owlCarousel({
         loop: true,
         center: true,
-        items: 3,
+        items: 5,
         margin: 0,
         autoplay: true,
         dots:true,
@@ -15,10 +15,10 @@ jQuery(document).ready(function($) {
             items: 1
           },
           768: {
-            items: 2
+            items: 3
           },
           1170: {
-            items: 3
+            items: 4
           }
         }
     });
