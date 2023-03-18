@@ -34,6 +34,7 @@ function populate(name, updated, languages, element) {
     var title = document.createElement("a");
     title.classList.add("title");
     var name_parts = name.replace("-", " ");
+    var name_parts = name.replace("_", " ");
     title.innerHTML = name_parts;
     title.setAttribute("href", element.html_url);
     card.appendChild(title);
