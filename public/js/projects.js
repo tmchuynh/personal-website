@@ -24,6 +24,7 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=100', (data) => 
  * @param element - the element of the array of objects
  */
 function populate(name, updated, languages, element) {
+    console.log(languages)
     var card = document.createElement("div");
     card.classList.add("cards");
     card.classList.add("animated");
@@ -33,8 +34,9 @@ function populate(name, updated, languages, element) {
 
     var title = document.createElement("a");
     title.classList.add("title");
-    var name_parts = name.replace("-", " ");
-    var name_parts = name.replace("_", " ");
+    var name_parts = name.replaceAll("-", " ");
+    name_parts = name_parts.replaceAll("_", " ");
+    name_parts = titleCase(name_parts);
     title.innerHTML = name_parts;
     title.setAttribute("href", element.html_url);
     card.appendChild(title);
@@ -72,6 +74,18 @@ function populate(name, updated, languages, element) {
     card.appendChild(date);
 
     project_container.appendChild(card);
+}
+
+/**
+ * We lowercase all the characters in the string, split the string into an array of words, map over the
+ * array to capitalize the first letter of each word, then join the array back into a string
+ * @param str - the string to be converted
+ * @returns the string with the first letter of each word capitalized.
+ */
+function titleCase(str) {
+    return str.toLowerCase().split(' ').map(function (word) {
+        return word.replace(word[0], word[0].toUpperCase());
+    }).join(' ');
 }
 
 /**
