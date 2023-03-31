@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
+.code {
+  font-size: 1.5rem;
+}
+
 span.lightBlue {
   color: #44d9f6;
 }
