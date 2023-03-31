@@ -342,7 +342,8 @@ section {
   text-align: center;
   align-items: center;
   margin: auto;
-  max-width: 60rem;
+  max-width: 100rem;
+  width: 75%;
 }
 
 .git-history img {
@@ -358,6 +359,10 @@ section {
 
 .experience section {
   margin: 20px 0;
+}
+
+.experience p {
+  margin-left: 4rem;
 }
 
 .skills-list {
