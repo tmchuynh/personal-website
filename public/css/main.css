@@ -442,7 +442,8 @@ section {
 
 .site-footer .keys {
   height: 5rem;
-  margin: 1rem;
+  margin-bottom: 2rem;
+  float: right;
 }
 
 .site-footer a {
