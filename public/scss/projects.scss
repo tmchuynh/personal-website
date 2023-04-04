@@ -1,0 +1,177 @@
+$dark-blue: #25569b;
+$grey: #707070;
+$python: #5ea9eb;
+$javascript: #f0d44c;
+$html: #e34c27;
+$css: #4266f5;
+$java: #d50308;
+$scss: #d742f5;
+$box-shadow: #b4b4b4;
+$font-size: 2rem;
+
+#project-tiles {
+    padding-top: 3rem;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 3rem 1rem 3rem;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 1rem !important;
+
+    .cards {
+        color: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        min-width: 400px;
+        height: 250px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 15px;
+        margin: 1rem 0.8rem;
+        box-shadow: 3px 10px 25px $box-shadow;
+        .img-screenshot {
+            width: 80%;
+            height: 30%;
+            object-fit: scale-down;
+        }
+
+        .date {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            .last-updated {
+                color: $grey;
+                font-family: "Roboto Mono", monospace;
+            }
+        }
+        &:hover {
+            box-shadow: 3px 10px 25px $box-shadow;
+
+            .title {
+                color: $grey;
+            }
+
+            .pages {
+                color: $grey;
+            }
+
+            .last-updated {
+                color: $grey;
+            }
+        }
+        .title {
+            font-size: 1.5rem;
+            color: black;
+            text-transform: capitalize;
+        }
+        .pages {
+            margin-top: 0.5rem;
+        }
+
+        i {
+            font-size: 2rem;
+            justify-content: center;
+            text-align: center;
+        }
+        .python {
+            color: $python;
+            font-size: $font-size;
+        }
+
+        .javascript {
+            color: $javascript;
+            font-size: $font-size;
+        }
+
+        .typescript,
+        .csharp {
+            width: 2rem;
+            font-size: $font-size;
+        }
+
+        .html {
+            color: $html;
+            font-size: $font-size;
+        }
+
+        .css {
+            color: $css;
+            font-size: $font-size;
+        }
+
+        .plain-java {
+            color: $java;
+            font-size: $font-size;
+        }
+
+        .scss {
+            color: $scss;
+            font-size: $font-size;
+        }
+    }
+}
+.animated.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

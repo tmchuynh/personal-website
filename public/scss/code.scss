@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+span {
+	&.lightBlue {
+		color: #44d9f6;
+	}
+	&.darkBlue {
+		color: #297ad6;
+	}
+	&.blue {
+		color: #1e38ff;
+	}
+	&.yellow {
+		color: #dfd523;
+	}
+	&.green {
+		color: #32e90e;
+	}
+	&.purple {
+		color: #8700ed;
+	}
+	&.orange {
+		color: #e9810b;
+	}
+}
