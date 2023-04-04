@@ -1,6 +1,6 @@
 $cloud-line-height: 1.5rem;
 $cloud-width: 80%;
-$cloud-height: 250px;
+$cloud-height: 15.625rem;
 $size: 4;
 $color: #a33;
 
@@ -20,7 +20,7 @@ ul.cloud {
         color: $color;
         font-size: calc($size * 0.25rem + 0.5rem);
         display: block;
-        padding: 0.125rem 0.25rem;
+        padding: 2px 4px;
         position: relative;
         text-decoration: none;
         &[data-weight="0"] {
@@ -119,7 +119,7 @@ ul.cloud {
 
 .svg-container {
     position: relative;
-    height: 500px;
+    height: 31.25rem;
     overflow-x: hidden;
 
     svg {

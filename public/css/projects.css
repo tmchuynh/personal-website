@@ -14,29 +14,29 @@
     color: #25569b;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    min-width: 400px;
-    height: 250px;
+    width: 12.5rem;
+    min-width: 25rem;
+    height: 15.625rem;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 1rem;
     margin: 1rem 0.8rem;
-    box-shadow: 3px 10px 25px #b4b4b4; }
+    box-shadow: 0.25rem 0.625rem 1.5rem #b4b4b4; }
     #project-list .cards .img-screenshot {
       width: 80%;
       height: 30%;
       object-fit: scale-down; }
     #project-list .cards .date {
-      padding: 20px;
+      padding: 1.25rem;
       display: flex;
       flex-direction: column; }
       #project-list .cards .date .last-updated {
         color: #707070;
         font-family: "Roboto Mono", monospace; }
     #project-list .cards:hover {
-      box-shadow: 3px 10px 25px #b4b4b4; }
+      box-shadow: 0.25rem 0.75rem 1.75rem #b4b4b4; }
       #project-list .cards:hover .title {
         color: #707070; }
       #project-list .cards:hover .pages {

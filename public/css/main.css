@@ -33,10 +33,10 @@ body {
 --------------------------------------------------------------*/
 .btn {
   display: inline-block;
-  padding: 12px 16px 10px;
+  padding: 0.75rem 1rem 0.5rem;
   font-size: 1rem;
   line-height: 1.25;
-  margin: 15px;
+  margin: 1rem;
   background-color: #25569b;
   border-radius: 0.25rem;
   text-decoration: none;
@@ -80,8 +80,8 @@ a {
 .navbar-nav {
   min-width: fit-content;
   text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 16px; }
+  letter-spacing: 7.04px;
+  font-size: 1rem; }
   .navbar-nav .nav-item a {
     color: white;
     margin: 0 1rem; }
@@ -105,44 +105,44 @@ section {
   align-items: center; }
   section .section-title {
     text-align: center;
-    padding: 0px; }
+    padding: 0rem; }
     section .section-title h2 {
       /*name of section */
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: bold;
       text-transform: uppercase;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
       position: relative;
       color: #25569b; }
       section .section-title h2::before {
         content: "";
         position: absolute;
         display: block;
-        width: 125px;
+        width: 7.75rem;
         height: 1px;
         background: #707070;
         bottom: 1px;
-        left: calc(50% - 60px); }
+        left: calc(50% - 3.75rem); }
       section .section-title h2::after {
         content: "";
         position: absolute;
         display: block;
-        width: 40px;
+        width: 2.5rem;
         height: 3px;
         background: #25569b;
         bottom: 0;
-        left: calc(50% - 20px); }
+        left: calc(50% - 1.25rem); }
     section .section-title h4 {
       text-transform: uppercase;
-      margin-bottom: 10px;
-      margin-top: 15px;
+      margin-bottom: 14px;
+      margin-top: 14px;
       padding-left: 6rem;
       position: relative;
       color: #707070;
       font-weight: bold;
       text-align: start;
-      font-size: 24px; }
+      font-size: 1.5rem; }
       @media (max-width: 940px) {
         section .section-title h4 {
           margin-bottom: 7rem;
@@ -182,7 +182,7 @@ section {
       width: 90%;
       margin: auto;
       justify-content: center;
-      padding: 3rem 15px;
+      padding: 3rem 1rem;
       min-width: 50px;
       width: 85%; } }
 
@@ -252,7 +252,7 @@ section {
   margin: 1rem 4rem;
   text-align: left; }
   .experience section {
-    margin: 20px 0; }
+    margin: 1.25rem 0; }
   .experience p {
     margin-left: 4rem; }
 
@@ -273,7 +273,7 @@ section {
     height: fit-content; }
   .skills-list .keys {
     position: absolute;
-    top: -44px;
+    top: -2.75rem;
     left: 239px;
     height: fit-content; }
 
@@ -284,7 +284,7 @@ section {
   background-color: #707070;
   padding: 45px 0 20px;
   font-size: 15px;
-  line-height: 32px;
+  line-height: 2rem;
   color: #707070; }
   .site-footer hr {
     /*line across*/
@@ -296,14 +296,14 @@ section {
     text-transform: uppercase;
     font-size: 3rem;
     margin-top: 5px;
-    margin-bottom: 15px;
-    letter-spacing: 10px; }
+    margin-bottom: 1rem;
+    letter-spacing: 14px; }
   .site-footer p {
     text-align: justify;
     color: #eeecec; }
     @media only screen and (max-width: 991px) {
       .site-footer p {
-        margin-right: 20px;
+        margin-right: 1.25rem;
         margin-top: 15px; } }
   .site-footer a {
     /*the hyperlinks*/
@@ -311,7 +311,7 @@ section {
     text-decoration: none;
     letter-spacing: 5px;
     margin-right: 10px; }
-    @media (max-width: 520px) {
+    @media (max-width: 32.5rem) {
       .site-footer a {
         margin-right: 25px; } }
     .site-footer a:active + .vanish,
@@ -372,49 +372,49 @@ section {
       transition: all 0.2s linear;
       font-size: 2rem; }
       .site-footer .social-icons a i {
-        padding: 12px; }
+        padding: 0.75rem; }
       .site-footer .social-icons a.linkedin:hover {
-        color: #fff;
+        color: #eeecec;
         background-color: #0a66c2; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.linkedin {
-          color: #fff;
+          color: #eeecec;
           background-color: #0a66c2; } }
       .site-footer .social-icons a.devto:hover {
-        color: #fff;
+        color: #eeecec;
         background-color: #171717; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.devto {
           color: #171717;
-          background-color: #fff; } }
+          background-color: #eeecec; } }
       .site-footer .social-icons a.twitter:hover {
-        color: #fff;
+        color: #eeecec;
         background-color: #56b9ff; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.twitter {
-          background-color: #fff;
+          background-color: #eeecec;
           color: #56b9ff; } }
       .site-footer .social-icons a.codepen:hover {
         color: #171717;
-        background-color: #fff; }
+        background-color: #eeecec; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.codepen {
           color: #171717;
-          background-color: #fff; } }
+          background-color: #eeecec; } }
       .site-footer .social-icons a.github:hover {
-        background-color: #fff;
+        background-color: #eeecec;
         color: #707070; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.github {
-          background-color: #fff;
-          color: grey; } }
+          background-color: #eeecec;
+          color: #707070; } }
       .site-footer .social-icons a.gmail:hover {
-        color: #fff;
+        color: #eeecec;
         background-color: #d93025; }
       @media screen and (max-width: 767px) {
         .site-footer .social-icons a.gmail {
-          color: #fff;
-          background-color: #d04137; } }
+          color: #eeecec;
+          background-color: #d93025; } }
     @media only screen and (max-width: 991px) {
       .site-footer .social-icons {
         display: block; } }
@@ -435,7 +435,7 @@ section {
   .footer-links li {
     /* list elements */
     display: block;
-    margin-left: 50px;
+    margin-left: 3.125rem;
     position: relative; }
   @media (max-width: 520px) {
     .footer-links {
@@ -444,6 +444,6 @@ section {
       padding: auto; } }
   @media only screen and (max-width: 991px) {
     .footer-links {
-      gap: 0px;
+      gap: 0rem;
       left: -5%;
       position: relative; } }

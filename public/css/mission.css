@@ -7,12 +7,12 @@ ul.cloud {
   justify-content: center;
   line-height: 1.5rem;
   width: 80%;
-  height: 250px; }
+  height: 15.625rem; }
   ul.cloud a {
     color: #a33;
     font-size: calc($size * 0.25rem + 0.5rem);
     display: block;
-    padding: 0.125rem 0.25rem;
+    padding: 2px 4px;
     position: relative;
     text-decoration: none; }
     ul.cloud a:focus {
@@ -39,7 +39,7 @@ ul.cloud {
 
 .svg-container {
   position: relative;
-  height: 500px;
+  height: 31.25rem;
   overflow-x: hidden; }
   .svg-container svg {
     position: absolute;

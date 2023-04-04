@@ -5,15 +5,15 @@
   font-family: "Lato", sans-serif;
   text-align: center;
   width: 365px;
-  height: 200px;
+  height: 12.5rem;
   margin: 1rem; }
 
 .arr {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   text-align: center;
-  line-height: 100px;
+  line-height: 6.25rem;
   background: grey;
   color: white;
   font-size: 55px;
@@ -27,7 +27,7 @@
   user-select: none; }
   .arr:active {
     border-bottom: 8px solid #4d4d4d;
-    text-shadow: 0 0 10px white, 0 0 10px white, 0 0 20px white;
+    text-shadow: 0 0 10px solid white, 0 0 10px solid white, 0 0 20px white;
     transform: translate(0, 2px); }
 
 .up {
@@ -36,7 +36,7 @@
 
 .pressed {
   border-bottom: 8px solid #4d4d4d;
-  text-shadow: 0 0 10px white;
+  text-shadow: 0 0 10px solid white;
   transform: translate(0, 2px); }
 
 .names {
@@ -44,4 +44,4 @@
   font-family: "Lato", sans-serif;
   text-align: center;
   color: white;
-  text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white, 0 0 10px white; }
+  text-shadow: 0 0 10px solid white, 0 0 10px solid white, 0 0 10px solid white, 0 0 10px solid white; }

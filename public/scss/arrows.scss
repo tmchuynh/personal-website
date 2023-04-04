@@ -1,5 +1,7 @@
 $font-family: "Lato", sans-serif;
-$border: 10px;
+$border: 10px solid;
+$small-border: 8px solid #4d4d4d;
+$text-shadow: 0 0 $border white;
 
 .arrows {
 	padding-top: 2rem;
@@ -8,29 +10,29 @@ $border: 10px;
 	font-family: $font-family;
 	text-align: center;
 	width: 365px;
-	height: 200px;
+	height: 12.5rem;
 	margin: 1rem;
 }
 .arr {
 	cursor: pointer;
-	width: 100px;
-	height: 100px;
+	width: 6.25rem;
+	height: 6.25rem;
 	text-align: center;
-	line-height: 100px;
+	line-height: 6.25rem;
 	background: grey;
 	color: white;
 	font-size: 55px;
-	border-right: $border solid #b8b8b8;
-	border-bottom: $border solid #242222;
-	border-left: $border solid #5a5a5a;
-	border-top: $border solid #a09b9b;
+	border-right: $border #b8b8b8;
+	border-bottom: $border #242222;
+	border-left: $border #5a5a5a;
+	border-top: $border #a09b9b;
 	display: inline-block;
 	margin: 2px;
 	transition: all 0.05s linear;
 	user-select: none;
 	&:active {
-		border-bottom: 8px solid #4d4d4d;
-		text-shadow: 0 0 $border white, 0 0 $border white, 0 0 20px white;
+		border-bottom: $small-border;
+		text-shadow: $text-shadow, $text-shadow, 0 0 20px white;
 		transform: translate(0, 2px);
 	}
 }
@@ -39,8 +41,8 @@ $border: 10px;
 	top: -2px;
 }
 .pressed {
-	border-bottom: 8px solid #4d4d4d;
-	text-shadow: 0 0 $border white;
+	border-bottom: $small-border;
+	text-shadow: $text-shadow;
 	transform: translate(0, 2px);
 }
 .names {
@@ -48,5 +50,5 @@ $border: 10px;
 	font-family: $font-family;
 	text-align: center;
 	color: white;
-	text-shadow: 0 0 $border white, 0 0 $border white, 0 0 $border white, 0 0 $border white;
+	text-shadow: $text-shadow, $text-shadow, $text-shadow, $text-shadow;
 }
