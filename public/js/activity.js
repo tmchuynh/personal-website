@@ -4,13 +4,11 @@
  * @param callback - The function to be executed when the DOM is ready.
  */
 function onReady(callback) {
-  var intervalId = window.setInterval(function () {
-    if (document.getElementsByTagName('body')[0] !== undefined) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 9000);
+  document.addEventListener('DOMContentLoaded', function () {
+    callback.call(this);
+  });
 }
+
 
 /**
  * If the visible parameter is true, then set the display style of the element with the given selector

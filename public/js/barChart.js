@@ -3,7 +3,7 @@
 new Chart(document.getElementById("barChart"), {
     type: 'bar',
     data: {
-        labels: ["JavaScript", "HTML/CSS", "SQL", "Python", "Java" < "Bash/Shell/PowerShell", "C#", "TypeScript", "PHP", "C++", "C", "Go", "Kotlin", "Ruby", "Swift", "R", "Rust", "Objective-C"],
+        labels: ["JavaScript", "HTML/CSS", "SQL", "Python", "Java", "Bash/Shell/PowerShell", "C#", "TypeScript", "PHP", "C++", "C", "Go", "Kotlin", "Ruby", "Swift", "R", "Rust", "Objective-C"],
         datasets: [{
             label: "title",
             data: [69, 63, 60, 42, 38, 34, 32, 28, 25, 20, 18, 10, 8, 7.5, 6.3, 6.1, 5.5, 4.9, 4],
@@ -37,4 +37,3 @@ new Chart(document.getElementById("barChart"), {
         }
     }
 });
-

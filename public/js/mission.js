@@ -3,7 +3,7 @@ $(document).ready(function() {
       //textColour: '#ff0000',
       outlineColour: '#ff00ff',
       reverse: true,
-      depth: 0.8,
+      depth: 1,
       maxSpeed: 0.05,
       textFont: null,
       textColour: null,

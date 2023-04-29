@@ -24,12 +24,19 @@ jQuery(document).ready(function($) {
       },
       992: {
         items: 4,
-        margin: 40
+        margin: 80
       },
-      1200: {
-        items: 5,
-        margin: 50
-      }
+    },
+    onTranslated: function() {
+      this.$owlItems.removeClass('center');
+      var currentItem = this.$owlItems.eq(this.current());
+      currentItem.addClass('center');
+      this.trigger('refresh.owl.carousel');
+    },
+    onInitialized: function() {
+      var currentItem = this.$owlItems.eq(this.current());
+      currentItem.addClass('center');
+      this.trigger('refresh.owl.carousel');
     }
   });
 });
