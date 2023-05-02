@@ -24,7 +24,6 @@ $.getJSON('https://api.github.com/users/tmchuynh/repos?per_page=100', (data) => 
  * @param element - the element of the array of objects
  */
 function populate(name, updated, languages, element) {
-    console.log(languages)
     var card = document.createElement("div");
     card.classList.add("cards");
     card.classList.add("animated");
@@ -48,6 +47,11 @@ function populate(name, updated, languages, element) {
     var month = date_0[1];
     var day = date_0[2];
 
+
+    /* This code block is checking if a screenshot image file exists for a particular project and if it
+    does, it creates an `img` element, sets its source and alt attributes to the appropriate values,
+    adds a class to it, and appends it to the `card` element. The `name` variable is used to construct
+    the file path to the screenshot image file. */
     if (checkFileExist("../public/screenshots/" + name + ".png")) {
         var img = document.createElement("img");
         img.classList.add("img-screenshot");
