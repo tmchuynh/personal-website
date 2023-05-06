@@ -22,10 +22,10 @@ jQuery(document).ready(function($) {
         items: 3,
         margin: 30
       },
-      992: {
-        items: 4,
-        margin: 80
-      },
+      // 992: {
+      //   items: 4,
+      //   margin: 80
+      // },
     },
     onTranslated: function() {
       this.$owlItems.removeClass('center');
