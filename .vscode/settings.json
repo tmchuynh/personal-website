@@ -2,5 +2,6 @@
     "liveServer.settings.port": 5502,
     "docwriter.style": "Auto-detect",
     "docwriter.progress.trackFunctions": false,
-    "docwriter.progress.trackMethods": false
+    "docwriter.progress.trackMethods": false,
+    "px-to-rem.px-per-rem": 16
 }
