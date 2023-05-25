@@ -34,52 +34,62 @@ function populate(name, updated, languages, element) {
 
     var title = document.createElement("a");
     title.classList.add("title");
-    var name_parts = name.replaceAll("-", " ");
-    name_parts = name_parts.replaceAll("_", " ");
-    name_parts = titleCase(name_parts);
-    title.innerHTML = name_parts;
+    var formattedName = formatName(name);
+    title.innerHTML = formattedName;
     title.setAttribute("href", element.html_url);
     card.appendChild(title);
 
-    var date = updated.split("T")[0]
+    var date = updated.split("T")[0];
     var date_0 = date.split("-");
 
     var year = date_0[0];
     var month = date_0[1];
     var day = date_0[2];
 
-
-    /* This code block is checking if a screenshot image file exists for a particular project and if it
-    does, it creates an `img` element, sets its source and alt attributes to the appropriate values,
-    adds a class to it, and appends it to the `card` element. The `name` variable is used to construct
-    the file path to the screenshot image file. */
-    if (checkFileExist("../public/screenshots/" + name + ".png")) {
-        var img = document.createElement("img");
-        img.classList.add("img-screenshot");
-        img.setAttribute("src", "../public/screenshots/" + name + ".png");
-        img.setAttribute("alt", name);
-        card.appendChild(img);
+    var screenshotSrc = "../public/screenshots/" + name + ".png";
+    if (checkFileExist(screenshotSrc)) {
+        var screenshotImg = createScreenshotImage(screenshotSrc, name);
+        card.appendChild(screenshotImg);
     }
 
-    var date = document.createElement("div");
-    date.classList.add("date");
+    var dateElement = document.createElement("div");
+    dateElement.classList.add("date");
 
-    var subtitle = document.createElement("code");
-    subtitle.classList.add("last-updated");
-    subtitle.classList.add("mb-0");
-    subtitle.innerHTML = "Last updated on:"
-    date.appendChild(subtitle);
+    var subtitle = createCodeElement("last-updated", "mb-0");
+    subtitle.appendChild(document.createTextNode("Last updated on:"));
+    dateElement.appendChild(subtitle);
 
-    var last_updated = document.createElement("code");
-    last_updated.innerHTML = month + "/" + day + "/" + year;
-    last_updated.classList.add("last-updated");
-    last_updated.classList.add("mt-0");
-    date.appendChild(last_updated);
+    var lastUpdated = createCodeElement("last-updated", "mt-0");
+    lastUpdated.innerHTML = month + "/" + day + "/" + year;
+    dateElement.appendChild(lastUpdated);
 
-    card.appendChild(date);
+    card.appendChild(dateElement);
 
     project_container.appendChild(card);
 }
+
+
+function formatName(name) {
+    let formattedName = name.replaceAll("-", " ");
+    formattedName = formattedName.replaceAll("_", " ");
+    formattedName = titleCase(formattedName);
+    return formattedName;
+}
+
+function createCodeElement(...classNames) {
+    const codeElement = document.createElement("code");
+    codeElement.classList.add(...classNames);
+    return codeElement;
+}
+
+function createScreenshotImage(src, alt) {
+    const img = document.createElement("img");
+    img.classList.add("img-screenshot");
+    img.setAttribute("src", src);
+    img.setAttribute("alt", alt);
+    return img;
+}
+
 
 /**
  * We lowercase all the characters in the string, split the string into an array of words, map over the
@@ -99,78 +109,88 @@ function titleCase(str) {
  * @param card - The card element that the languages will be added to.
  */
 function addLanguages(languages, card) {
-    var lang_icons = document.createElement("div");
-    lang_icons.classList.add("d-flex");
-    lang_icons.classList.add("languages_list");
+    const langIcons = document.createElement("div");
+    langIcons.classList.add("d-flex");
+    langIcons.classList.add("languages_list");
 
-    var icon = document.createElement("i");
-    icon.classList.add("bx");
-    if (languages.length == 0) {
+    if (languages.length === 0) {
+        const icon = document.createElement("i");
+        icon.classList.add("bx");
         icon.innerHTML = " ";
+        langIcons.appendChild(icon);
+    } else {
+        if (languages.includes("HTML")) {
+            const icon2 = createIcon("bxl-html5", "html");
+            langIcons.appendChild(icon2);
+        }
+        if (languages.includes("Python")) {
+            const icon3 = createIcon("bxl-python", "python");
+            langIcons.appendChild(icon3);
+        }
+        if (languages.includes("JavaScript")) {
+            const icon4 = createIcon("bxl-javascript", "javascript");
+            langIcons.appendChild(icon4);
+        }
+        if (languages.includes("CSS")) {
+            const icon5 = createIcon("bxl-css3", "css");
+            langIcons.appendChild(icon5);
+        }
+        if (languages.includes("TypeScript")) {
+            const icon6 = createImageIcon("./public/icons/typescript.svg", "typescript");
+            langIcons.appendChild(icon6);
+        }
+        if (languages.includes("C#")) {
+            const icon7 = createImageIcon("./public/icons/csharp.svg", "csharp");
+            langIcons.appendChild(icon7);
+        }
+        if (languages.includes("Java")) {
+            const icon9 = createIcon("bxl-java", "plain-java");
+            langIcons.appendChild(icon9);
+        }
+        if (languages.includes("SCSS")) {
+            const icon10 = createIcon("bxl-sass", "scss");
+            langIcons.appendChild(icon10);
+        }
     }
-    if (languages.includes("HTML")) {
-        var icon2 = document.createElement("i");
-        icon2.classList.add("bx");
-        icon2.classList.add("bxl-html5");
-        icon2.classList.add("html");
-        lang_icons.appendChild(icon2);
-    }
-    if (languages.includes("Python")) {
-        var icon3 = document.createElement("i");
-        icon3.classList.add("bx");
-        icon3.classList.add("bxl-python");
-        icon3.classList.add("python");
-        lang_icons.appendChild(icon3);
-    }
-    if (languages.includes("JavaScript")) {
-        var icon4 = document.createElement("i");
-        icon4.classList.add("bx");
-        icon4.classList.add("bxl-javascript");
-        icon4.classList.add("javascript");
-        lang_icons.appendChild(icon4);
-    }
-    if (languages.includes("CSS")) {
-        var icon5 = document.createElement("i");
-        icon5.classList.add("bx");
-        icon5.classList.add("bxl-css3");
-        icon5.classList.add("css");
-        lang_icons.appendChild(icon5);
-    }
-    if (languages.includes("TypeScript")) {
-        var icon6 = document.createElement("img");
-        var source = document.createAttribute("src");
-        source.value = "./public/icons/typescript.svg";
-        icon6.setAttributeNode(source);
-        icon6.classList.add("typescript");
-        lang_icons.appendChild(icon6);
-    }
-    if (languages.includes("C#")) {
-        var icon7 = document.createElement("img");
-        var source = document.createAttribute("src");
-        source.value = "./public/icons/csharp.svg";
-        icon7.setAttributeNode(source);
-        icon7.classList.add("csharp");
-        lang_icons.appendChild(icon7);
-    }
-    if (languages.includes("Java")) {
-        var icon9 = document.createElement("i");
-        icon9.classList.add("bx");
-        icon9.classList.add("bxl-java");
-        icon9.classList.add("plain-java");
-        lang_icons.appendChild(icon9);
-    }
-    if (languages.includes("SCSS")) {
-        var icon10 = document.createElement("i");
-        icon10.classList.add("bx");
-        icon10.classList.add("bxl-sass");
-        icon10.classList.add("scss");
-        lang_icons.appendChild(icon10);
-    }
-    lang_icons.appendChild(icon);
 
+    const icon = document.createElement("i");
+    icon.classList.add("bx");
+    langIcons.appendChild(icon);
 
-    card.appendChild(lang_icons);
+    card.appendChild(langIcons);
 }
+
+/**
+ * Creates an icon element with the specified icon and language classes.
+ *
+ * @param {string} iconClass - The class name for the icon.
+ * @param {string} langClass - The class name for the language.
+ * @returns {HTMLElement} - The icon element.
+ */
+function createIcon(iconClass, langClass) {
+    const icon = document.createElement("i");
+    icon.classList.add("bx");
+    icon.classList.add(iconClass);
+    icon.classList.add(langClass);
+    return icon;
+}
+
+/**
+ * Creates an image icon with the given source and adds a language class to it.
+ *
+ * @param {string} src - The source URL of the image.
+ * @param {string} langClass - The language class to be added to the icon.
+ * @return {HTMLElement} The newly created icon element.
+ */
+function createImageIcon(src, langClass) {
+    const icon = document.createElement("img");
+    const source = document.createAttribute("src");
+    source.value = src;
+    icon.setAttributeNode(source);
+    icon.classList.add(langClass);
+    return icon;
+}
+
 
 /**
  * It takes a string, finds all the words in it, and capitalizes the first letter of each word
