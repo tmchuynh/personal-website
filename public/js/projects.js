@@ -68,7 +68,12 @@ function populate(name, updated, languages, element) {
     project_container.appendChild(card);
 }
 
-
+/**
+ * Formats a given name by replacing all hyphens and underscores with spaces and capitalizing the first letter of every word.
+ *
+ * @param {string} name - The name to be formatted.
+ * @return {string} The formatted name.
+ */
 function formatName(name) {
     let formattedName = name.replaceAll("-", " ");
     formattedName = formattedName.replaceAll("_", " ");
@@ -76,12 +81,26 @@ function formatName(name) {
     return formattedName;
 }
 
+/**
+ * Creates a new code element with the specified classNames.
+ *
+ * @param {...string} classNames - The class names to add to the new code element.
+ * @return {HTMLElement} The newly created code element.
+ */
 function createCodeElement(...classNames) {
     const codeElement = document.createElement("code");
     codeElement.classList.add(...classNames);
     return codeElement;
 }
 
+/**
+ * Creates an HTML `img` element with the specified `src` and `alt` attributes,
+ * and returns it. The `img` element is also given the `img-screenshot` class.
+ *
+ * @param {string} src - The URL of the image to display.
+ * @param {string} alt - A description of the image, for accessibility purposes.
+ * @return {HTMLImageElement} The `img` element that was created.
+ */
 function createScreenshotImage(src, alt) {
     const img = document.createElement("img");
     img.classList.add("img-screenshot");
