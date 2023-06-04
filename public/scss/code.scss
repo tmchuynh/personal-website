@@ -1,25 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Inconsolata);
 
 span {
-	&.lightBlue {
-		color: #44d9f6;
+	&.emphasis {
+	  color: #007bff; /* Blue */
 	}
-	&.darkBlue {
-		color: #297ad6;
+	&.names {
+	  color: #3498db; /* Light Blue */
 	}
-	&.blue {
-		color: #1e38ff;
+	&.parenth {
+	  color: #2980b9; /* Dark Blue */
 	}
-	&.yellow {
-		color: #dfd523;
+	&.outside {
+	  color: #4169e1; /* Royal Blue */
 	}
-	&.green {
-		color: #32e90e;
+	&.load {
+	  color: #1e90ff; /* Dodger Blue */
 	}
-	&.purple {
-		color: #8700ed;
+	&.function {
+	  color: #4682b4; /* Steel Blue */
 	}
-	&.orange {
-		color: #e9810b;
+	&.params {
+	  color: #87ceeb; /* Sky Blue */
 	}
-}
+  }
+  

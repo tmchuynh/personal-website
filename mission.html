@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
   <link href="public/css/main.css" rel="stylesheet">
-  <link href="public/css/mission.css" rel="stylesheet">
   <link href="public/css/code.css" rel="stylesheet">
 </head>
 
@@ -42,21 +41,72 @@
   </nav>
 
   <section class="container-fluid d-flex p-5">
-    <div class="container">
+    <div class="container d-flex cloud-container justify-content-center flex-column">
       <div class="section-title">
-
-        <h2>The Goal</h2>
+        <h2>Current skills</h2>
       </div>
-      <ul class="list-group list-group-flush w-75">
-        <li class="list-group-item">Master JavaScript and learn TypeScript</li>
-        <li class="list-group-item">Learn Babel and adventure to different CSS frameworks</li>
-        <li class="list-group-item">Study more node.js</li>
-        <li class="list-group-item">Learn mySQL and Python (Flask and MongoDB) for web development</li>
-        <li class="list-group-item">Broaden experience with Fullstack React</li>
-        <li class="list-group-item">Look into Angular and Vue.js</li>
-        <li class="list-group-item">Develop socially benefical applications to lead an impact on society</li>
-      </ul>
+      <div id="myCanvasContainer" class="m-auto">
+        <canvas width="450" height="300" id="myCanvas">
+          <p>Anything in here will be replaced on browsers that support the canvas element</p>
+        </canvas>
+      </div>
+      <div id="tags" style="font-size: 50%">
+        <a href="#" style="font-size: 3.83ex">Spring</a>
+        <a href="#" style="font-size: 3.61ex">Java</a>
+        <a href="#" style="font-size: 10.54ex">GitHub</a>
+        <a href="#" style="font-size: 5.64ex">React</a>
+        <a href="#" style="font-size: 10.47ex">CSS</a>
+        <a href="#" style="font-size: 6.74ex">Flask</a>
+        <a href="#" style="font-size: 6.74ex">MySQL</a>
+        <a href="#" style="font-size: 4.16ex">jQuery</a>
+        <a href="#" style="font-size: 10.32ex">Boostrap</a>
+        <a href="#" style="font-size: 10.46ex">HTML</a>
+        <a href="#" style="font-size: 7.36ex">Agile</a>
+        <a href="#" style="font-size: 9.23ex">Sass</a>
+        <a href="#" style="font-size: 4.36ex">Flask</a>
+        <a href="#" style="font-size: 9.16ex">JavaScript</a>
+        <a href="#" style="font-size: 2.69ex">C#</a>
+        <a href="#" style="font-size: 6.8ex">Node.js</a>
+        <a href="#" style="font-size: 8.77ex">GitKraken</a>
+        <a href="#" style="font-size: 3.47ex">MongoDB</a>
+        <a href="#" style="font-size: 2.65ex">FullStack</a>
+        <a href="#" style="font-size: 5.65ex">Postman</a>
+        <a href="#" style="font-size: 6.92ex">APIs</a>
+        <a href="#" style="font-size: 9.32ex">Fontend</a>
+        <a href="#" style="font-size: 5.58ex">Backend</a>
+        <a href="#" style="font-size: 5.46ex">Spring MVC</a>
+        <a href="#" style="font-size: 6.44ex">Python</a>
+        <a href="#" style="font-size: 2.68ex">TypeScript</a>
+      </div>
     </div>
+
+    <div class="wrap container code">
+      <div class="404">
+        <pre><code>
+      <span class="emphasis">$</span><span class="outside">(</span><span class="function">function </span><span class="function">(</span> <span class="params">workingComputer</span> <span class="function">) {</span> 
+           <span class="function">function</span> <span class="names">launch</span><span class="parenth">() {</span>
+              <span class="emphasis">if</span><span class="outside">(</span><span class="params">sleepTime</span><span class="function"> | | </span><span class="params">foodTime</span><span class="outside">) {</span>
+                  <span class="emphasis">return</span>;
+              <span class="outside">}</span>
+              <span class="function">function</span> <span class="names">study</span><span class="outside">() {</span>
+                  <span class="emphasis">while </span><span class="function">(</span> <span class="params">fullStack</span><span class="function"> ) {</span>
+                    <span class="names">javaScriptandTypeScript</span><span class="parenth">()</span>
+                    <span class="names">angularAndReact</span><span class="parenth">()</span>
+                    <span class="names">databases</span><span class="parenth">()</span>
+                    <span class="names">API</span><span class="parenth">()</span>
+                  <span class="function">}</span>
+              <span class="outside">}</span>
+        <span class="names">}</span>
+      <span class="params">window</span>.<span class="names">addEventListener</span><span class="parenth">(</span> <span class="load">'load'</span>,<span class="params"> launch</span><span class="parenth"> );</span>
+      <span class="function">}(</span><span class="parenth">true</span><span class="function">)</span><span class="outside">)</span><span class="emphasis">;</span>
+    </code></pre>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="container-fluid d-flex">
     <div class="container">
       <div class="section-title">
         <h2>Why Web Development</h2>
@@ -95,256 +145,74 @@
     </div>
   </section>
 
-  <section class="container-fluid d-flex">
-    <div class="container d-flex cloud-container justify-content-center flex-column">
-      <div class="section-title">
-        <h2>Current skills</h2>
-      </div>
-      <div id="myCanvasContainer" class="m-auto">
-        <canvas width="450" height="300"  id="myCanvas">
-          <p>Anything in here will be replaced on browsers that support the canvas element</p>
-        </canvas>
-      </div>
-      <div id="tags"  style="font-size: 50%">
-      <a href="#" style="font-size: 2.83ex">Swift</a>
-      <a href="#" style="font-size: 3.61ex">Java</a>
-      <a href="#" style="font-size: 9.64ex">React</a>
-      <a href="#" style="font-size: 4.47ex">CSS</a>
-      <a href="#" style="font-size: 3.46ex">HTML</a>
-      <a href="#" style="font-size: 12.32ex">Boostrap</a>
-      <a href="#" style="font-size: 3.74ex">Flask</a>
-      <a href="#" style="font-size: 3.16ex">JavaScript</a>
-      <a href="#" style="font-size: 3.74ex">mySQL</a>
-      <a href="#" style="font-size: 3.16ex">jQuery</a>
-      <a href="#" style="font-size: 8.36ex">Agile</a>
-      <a href="#" style="font-size: 13.23ex">Sass</a>
-      <a href="#" style="font-size: 4.36ex">Flask</a>
-      <a href="#" style="font-size: 3.32ex">Adobe Photoshop</a>
-      <a href="#" style="font-size: 4.69ex">C#</a>
-      <a href="#" style="font-size: 4.8ex">node.js</a>
-      <a href="#" style="font-size: 5.47ex">MongoDB</a>
-      <a href="#" style="font-size: 2.65ex">FullStack</a>
-      <a href="#" style="font-size: 8.77ex">GitKraken</a>
-      <a href="#" style="font-size: 13ex">GitHub</a>
-      <a href="#" style="font-size: 2.65ex">Postman</a>
-      <a href="#" style="font-size: 5.92ex">APIs</a>
-      <a href="#" style="font-size: 3.32ex">Fontend</a>
-      <a href="#" style="font-size: 4.58ex">Backend</a>
-      <a href="#" style="font-size: 3.46ex">tagcloud</a>
-      <a href="#" style="font-size: 12.44ex">Python</a>
-      <a href="#" style="font-size: 10.68ex">TypeScript</a>
-      </div>
-
-      <div class="section-title">
-        <h2>Why I Want to Master Flask</h2>
-
-      </div>
-      <p>Flask is a powerful and versatile web framework that is essential for anyone interested in building web
-        applications using Python. By learning Flask, individuals can create robust and scalable web applications, APIs,
-        and microservices.
-        <br><br>
-        One of the main benefits of Flask is its lightweight and easy-to-use nature. Flask is a microframework, meaning
-        it is designed to be simple and easy to learn, making it an ideal choice for both beginners and experienced
-        developers. Flask's intuitive syntax and minimalism also make it an excellent framework for quickly prototyping
-        and building small to medium-sized web applications.
-        <br><br>
-        Flask offers a wide range of features that enable developers to create sophisticated web applications. For
-        instance, Flask's URL routing makes it easy to map URLs to specific functions, while templates and form handling
-        simplify the creation of dynamic user interfaces. Flask also supports a variety of extensions, including
-        authentication, caching, and database support, allowing developers to tailor their web applications to meet
-        specific requirements.
-        <br><br>
-        Another key feature of Flask is its high customizability. Flask's minimalistic nature means that developers can
-        use it as a foundation and build on top of it with their own custom code or third-party libraries. This makes
-        Flask an excellent choice for building complex web applications that require a high degree of customization and
-        flexibility.
-        <br><br>
-        Flask is widely used in various industries, including finance, healthcare, and e-commerce, making it a valuable
-        skill that can lead to exciting career opportunities. By mastering Flask, individuals can take their Python
-        skills to the next level and build sophisticated web applications. They can also stay ahead of the curve in the
-        rapidly evolving world of web development, where Python and Flask continue to be in high demand.
-        <br><br>
-        In summary, Flask is a powerful and versatile web framework that is essential for anyone interested in building
-        web applications using Python. Its lightweight and easy-to-use nature, wide range of features, and high
-        customizability make it an excellent choice for building sophisticated web applications. With its wide adoption
-        and in-demand skill set, mastering Flask can lead to exciting career opportunities and enable individuals to
-        take their Python skills to the next level.
-      </p>
-    </div>
-
-    <!-- *This is a css translation of a 404 image of the site: http://retromodular.com/ -->
-
-    <div class="wrap container code">
-      <div class="404">
-        <pre><code>
-      <span class="lightBlue">$</span><span class="yellow">(</span><span class="purple">function</span><span class="purple">(</span> <span class="orange">workingComputer</span> <span class="purple">) {</span> 
-           <span class="purple">function</span> <span class="darkBlue">launch</span><span class="blue">() {</span>
-              <span class="lightBlue">if</span><span class="yellow">(</span><span class="orange">sleepTime</span><span class="purple"> || </span><span class="orange">foodTime</span><span class="yellow">) {</span>
-                  <span class="lightBlue">return</span>;
-              <span class="yellow">}</span>
-              <span class="purple">function</span> <span class="darkBlue">study</span><span class="yellow">() {</span>
-                  <span class="lightBlue">while</span><span class="purple">(</span> <span class="orange">fullStack</span><span class="purple"> ) {</span>
-                    <span class="darkBlue">javaScriptandTypeScript</span><span class="blue">()</span>
-                    <span class="darkBlue">angularAndReact</span><span class="blue">()</span>
-                    <span class="darkBlue">databases</span><span class="blue">()</span>
-                    <span class="darkBlue">API</span><span class="blue">()</span>
-                  <span class="purple">}</span>
-              <span class="yellow">}</span>
-        <span class="darkBlue">}</span>
-      <span class="orange">window</span>.<span class="darkBlue">addEventListener</span><span class="blue">(</span> <span class="green">'load'</span>,<span class="orange"> launch</span><span class="blue"> );</span>
-      <span class="purple">}(</span><span class="blue">true</span><span class="purple">)</span><span class="yellow">)</span><span class="lightBlue">;</span>
-    </code></pre>
-      </div>
-    </div>
-    <!-- <div class="container">
-      <canvas id="barChart"></canvas>
-    </div> -->
-  </section>
-
-  <section class="container-fluid d-flex">
-    <div class="container d-flex justify-content-center">
-      <img src="public/imgs/top_lang.png">
-    </div>
-    <div class="container ">
-      <div class="section-title">
-
-        <h2>The Goal for Learning Babel</h2>
-      </div>
-      <p>Babel is a powerful tool that allows web developers to write modern JavaScript code that can be converted into
-        a format compatible with older web browsers. This is important because older web browsers may not support the
-        latest language features and syntax, which can make it difficult for developers to create high-quality web
-        applications that work across all browsers.
-        <br><br>
-        By using Babel, developers can write code using the latest language features, while still ensuring that their
-        code will work on older web browsers. This is achieved by transpiling the modern code into an older, more widely
-        supported format. This can include converting new syntax, such as arrow functions, const and let declarations,
-        and template literals, into their older equivalents, such as function expressions, var declarations, and string
-        concatenation.
-        <br><br>
-        Learning Babel is an essential skill for web developers who want to ensure their code is cross-browser
-        compatible. By keeping their code up-to-date with the latest language features, developers can create faster,
-        more efficient, and more maintainable web applications.
-        <br><br>
-        In addition to its compatibility benefits, Babel can also be used with other JavaScript tools and libraries,
-        such as webpack and React, to create a more efficient and streamlined development process. By optimizing the
-        code for performance, developers can create web applications that are faster and more responsive. This can lead
-        to better user experiences and increased engagement.
-        <br><br>
-        Furthermore, Babel can make the development process easier by allowing developers to use modern syntax and
-        features without worrying about browser compatibility issues. This can make the code easier to read, write, and
-        maintain, which can save time and effort in the long run.
-        <br><br>
-        Overall, learning Babel is a valuable skill for web developers. It can enhance their career prospects by
-        enabling them to create high-quality, cross-browser compatible web applications. By using Babel in conjunction
-        with other JavaScript tools and libraries, developers can create faster, more efficient, and more maintainable
-        web applications that provide a better user experience.
-      </p>
-      <div class="section-title">
-
-        <h2>Mixing in Fullstack React</h2>
-      </div>
-      <p>React is a powerful and widely used front-end JavaScript library that is essential for anyone interested in web
-        development. It allows developers to create dynamic and interactive user interfaces, single-page applications,
-        and mobile apps using JavaScript. By mastering React, individuals can take their web development skills to the
-        next level and build powerful and responsive web applications.
-        <br><br>
-        One of the main benefits of React is its high efficiency. React's virtual DOM allows for efficient updates to
-        the user interface without requiring a complete re-render of the page. This means that developers can create
-        complex applications with minimal code, improving development time and reducing the risk of errors.
-        <br><br>
-        React's component-based architecture is another key feature that makes it an ideal choice for building scalable
-        and modular applications. With components, developers can break down the user interface into smaller, reusable
-        pieces that can be easily managed and updated. This makes it easier to maintain codebases and improve the
-        overall application performance.
-        <br><br>
-        In addition to its efficiency and component architecture, React offers a wide range of features and libraries
-        that make it easier to create complex applications. For example, React Native allows for the development of
-        mobile applications using the same React syntax and component architecture, making it possible to create
-        cross-platform applications with ease.
-        <br><br>
-        React is also widely used by various tech giants, including Facebook, Instagram, and Netflix. This makes it an
-        in-demand skill that can lead to exciting career opportunities. By mastering React, individuals can stay ahead
-        of the curve in the rapidly evolving world of front-end web development and take advantage of the many
-        opportunities available in this growing field.
-        <br><br>
-        In summary, React is a popular and powerful front-end JavaScript library that is essential for anyone interested
-        in web development. By learning React, individuals can create dynamic and interactive user interfaces,
-        single-page applications, and mobile apps using JavaScript. Its efficiency, component architecture, and wide
-        range of features make it an ideal choice for building scalable and modular applications. With its wide adoption
-        and in-demand skill set, mastering React can lead to exciting career opportunities and enable individuals to
-        take their web development skills to the next level.
-      </p>
-    </div>
-  </section>
-
   <footer class="site-footer">
     <div class="container-fluid p-3">
-        <div class="row ps-3">
+      <div class="row ps-3">
 
-            <div class="col-md-4 col-sm-12">
-                <p>
-                    The technology sector is experiencing a significant growth surge, and the opportunities are
-                    limitless. The forthcoming years are brimming with thrilling breakthroughs and discoveries that
-                    will influence the way we interact, communicate and live. It is crucial to be a part of this
-                    revolution since the impact of technology on our lives will be substantial and enduring. As a
-                    community, we are working towards surpassing the boundaries of what can be accomplished, and
-                    aspiring to achieve extraordinary feats.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <p>
-                    Envision a world where cutting-edge technologies that were previously depicted in sci-fi films
-                    are now an actuality. From holographic keyboards and interactive tabletops to flying vehicles,
-                    the technology sector is bringing our most fantastic reveries to fruition. Innovations in
-                    machine learning such as autonomous cars, AI-powered personal assistants, and even robotic
-                    surgeries are transforming our lives and professions for the better. With every fresh discovery,
-                    we are forging a more promising future, and the potentials are genuinely infinite.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <p>
-                    The impetus behind these breakthroughs originates from the trailblazers of the technology
-                    industry, including Geoff Hinton, Yoshua Bengio, Yann LeCun, and Jurgen Schmidhuber. Despite
-                    facing resistance from their contemporaries in the 1990s and 2000s, these pioneers never lost
-                    faith in neural networks. They serve as a brilliant model of what can be accomplished with
-                    perseverance and a resolute vision.
-                </p>
-                <div class="keys">
-                    <img src="public/imgs/keys.png" alt="">
-                </div>
-            </div>
+        <div class="col-md-4 col-sm-12">
+          <p>
+            The technology sector is experiencing a significant growth surge, and the opportunities are
+            limitless. The forthcoming years are brimming with thrilling breakthroughs and discoveries that
+            will influence the way we interact, communicate and live. It is crucial to be a part of this
+            revolution since the impact of technology on our lives will be substantial and enduring. As a
+            community, we are working towards surpassing the boundaries of what can be accomplished, and
+            aspiring to achieve extraordinary feats.
+          </p>
         </div>
+        <div class="col-md-4 col-sm-12">
+          <p>
+            Envision a world where cutting-edge technologies that were previously depicted in sci-fi films
+            are now an actuality. From holographic keyboards and interactive tabletops to flying vehicles,
+            the technology sector is bringing our most fantastic reveries to fruition. Innovations in
+            machine learning such as autonomous cars, AI-powered personal assistants, and even robotic
+            surgeries are transforming our lives and professions for the better. With every fresh discovery,
+            we are forging a more promising future, and the potentials are genuinely infinite.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <p>
+            The impetus behind these breakthroughs originates from the trailblazers of the technology
+            industry, including Geoff Hinton, Yoshua Bengio, Yann LeCun, and Jurgen Schmidhuber. Despite
+            facing resistance from their contemporaries in the 1990s and 2000s, these pioneers never lost
+            faith in neural networks. They serve as a brilliant model of what can be accomplished with
+            perseverance and a resolute vision.
+          </p>
+          <div class="keys">
+            <img src="public/imgs/keys.png" alt="">
+          </div>
+        </div>
+      </div>
 
 
-        <hr>
+      <hr>
     </div>
 
     <!--social media icons-->
     <div class="container-fluid">
-        <div class="row ps-3">
-            <div class="col-md-6 col-xs-12">
-                <ul class="social-icons">
-                    <li><a class="linkedin" href="https://www.linkedin.com/in/tinamchuynh"><i
-                                class='bx bxl-linkedin-square'></i></a></li>
-                    <li><a class="github" href="https://github.com/tmchuynh"><i class='bx bxl-github'></i></a></li>
-                    <li><a class="twitter" href="https://twitter.com/tinamchuynh"><i class='bx bxl-twitter'></i></a>
-                    </li>
-                    <li><a class="gmail" href="mailto:tinamchuynh@gmail.com"><i class='bx bxs-envelope'></i></a>
-                    </li>
-                    <li><a class="devto" href="https://dev.to/tmchuynh"><i class='bx bxl-dev-to'></i></a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-6 col-xs-12 mt-md-3">
-                <p class="copyright-text">
-                    Copyright &copy; 2022 All Rights Reserved by <a href="https://www.linkedin.com/in/tinamchuynh/"
-                        style="text-decoration: underline;">Tina Huynh</a>
-                    <br>
-                </p>
-            </div>
+      <div class="row ps-3">
+        <div class="col-md-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="linkedin" href="https://www.linkedin.com/in/tinamchuynh"><i
+                  class='bx bxl-linkedin-square'></i></a></li>
+            <li><a class="github" href="https://github.com/tmchuynh"><i class='bx bxl-github'></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/tinamchuynh"><i class='bx bxl-twitter'></i></a>
+            </li>
+            <li><a class="gmail" href="mailto:tinamchuynh@gmail.com"><i class='bx bxs-envelope'></i></a>
+            </li>
+            <li><a class="devto" href="https://dev.to/tmchuynh"><i class='bx bxl-dev-to'></i></a></li>
+          </ul>
         </div>
+
+        <div class="col-md-6 col-xs-12 mt-md-3">
+          <p class="copyright-text">
+            Copyright &copy; 2022 All Rights Reserved by <a href="https://www.linkedin.com/in/tinamchuynh/"
+              style="text-decoration: underline;">Tina Huynh</a>
+            <br>
+          </p>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -353,7 +221,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script type="module" src="public/js/barChart.js"></script>
-  <script src="public/js/metro.js"></script>
   <script src="public/js/jquery-tag-canvas.min.js"></script>
   <script src="public/js/mission.js"></script>
 </body>
