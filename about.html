@@ -22,6 +22,8 @@
         integrity="sha512-9nh05jJrDiaIDxHB7KU6/kt5515wzTd72mQ5UYUBBBCIn0ztTHBgqHjfAS/kewylr8PUjCXpGr8ChhQjVtFVsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="public/css/recommendations.css" rel="stylesheet">
+    <link href="public/css/code.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -51,7 +53,7 @@
 
 
     <section class="container-fluid align-items-start d-md-flex d-block">
-        <section class="container align-items-center d-flex flex-column flex-wrap p-4">
+        <section class="container align-items-center d-flex flex-column flex-wrap p-4 col-8">
             <img class="img-fluid w-75 align-self-center p-3" src="public/imgs/me.png">
             <div class="contact text-center">
                 <div class="skills-list links m-0 mb-4">
@@ -61,11 +63,75 @@
                     <a href="https://github.com/tmchuynh" class="btn">GITHUB</a>
                 </div>
             </div>
+            <div id="map" style="width: 27rem; height: 25rem;"></div>
+            <div class="d-flex mt-2">
+
+                <div class="wrap code m-0">
+                    <div class="404">
+                        <pre><code>
+                    <span class="emphasis">$</span><span class="outside">(</span><span class="function">function </span><span class="function">(</span> <span class="params">workingComputer</span> <span class="function">) {</span> 
+                         <span class="function">function</span> <span class="names">launch</span><span class="parenth">() {</span>
+                            <span class="emphasis">if</span><span class="outside">(</span><span class="params">sleepTime</span><span class="function"> | | </span><span class="params">foodTime</span><span class="outside">) {</span>
+                                <span class="emphasis">return</span>;
+                            <span class="outside">}</span>
+                            <span class="function">function</span> <span class="names">study</span><span class="outside">() {</span>
+                                <span class="emphasis">while </span><span class="function">(</span> <span class="params">fullStack</span><span class="function"> ) {</span>
+                                  <span class="names">javaScriptandTypeScript</span><span class="parenth">()</span>
+                                  <span class="names">angularAndReact</span><span class="parenth">()</span>
+                                  <span class="names">databases</span><span class="parenth">()</span>
+                                  <span class="names">API</span><span class="parenth">()</span>
+                                <span class="function">}</span>
+                            <span class="outside">}</span>
+                      <span class="names">}</span>
+                    <span class="params">window</span>.<span class="names">addEventListener</span><span class="parenth">(</span> <span class="load">'load'</span>,<span class="params"> launch</span><span class="parenth"> );</span>
+                    <span class="function">}(</span><span class="parenth">true</span><span class="function">)</span><span class="outside">)</span><span class="emphasis">;</span>
+                  </code></pre>
+                    </div>
+                </div>
+                <div class="cloud-container justify-content-center flex-column">
+                    <div class="section-title">
+                        <h2>Current skills</h2>
+                    </div>
+                    <div id="myCanvasContainer" class="m-auto">
+                        <canvas width="450" height="300" id="myCanvas">
+                            <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                        </canvas>
+                    </div>
+                    <div id="tags" style="font-size: 50%; margin: auto; width: 100%;">
+                        <a href="#" style="font-size: 3.83ex">Spring</a>
+                        <a href="#" style="font-size: 3.61ex">Java</a>
+                        <a href="#" style="font-size: 10.54ex">GitHub</a>
+                        <a href="#" style="font-size: 5.64ex">React</a>
+                        <a href="#" style="font-size: 10.47ex">CSS</a>
+                        <a href="#" style="font-size: 6.74ex">Flask</a>
+                        <a href="#" style="font-size: 6.74ex">MySQL</a>
+                        <a href="#" style="font-size: 4.16ex">jQuery</a>
+                        <a href="#" style="font-size: 10.32ex">Boostrap</a>
+                        <a href="#" style="font-size: 10.46ex">HTML</a>
+                        <a href="#" style="font-size: 7.36ex">Agile</a>
+                        <a href="#" style="font-size: 9.23ex">Sass</a>
+                        <a href="#" style="font-size: 4.36ex">Flask</a>
+                        <a href="#" style="font-size: 9.16ex">JavaScript</a>
+                        <a href="#" style="font-size: 2.69ex">C#</a>
+                        <a href="#" style="font-size: 6.8ex">Node.js</a>
+                        <a href="#" style="font-size: 8.77ex">GitKraken</a>
+                        <a href="#" style="font-size: 3.47ex">MongoDB</a>
+                        <a href="#" style="font-size: 2.65ex">FullStack</a>
+                        <a href="#" style="font-size: 5.65ex">Postman</a>
+                        <a href="#" style="font-size: 6.92ex">APIs</a>
+                        <a href="#" style="font-size: 9.32ex">Fontend</a>
+                        <a href="#" style="font-size: 5.58ex">Backend</a>
+                        <a href="#" style="font-size: 5.46ex">Spring MVC</a>
+                        <a href="#" style="font-size: 6.44ex">Python</a>
+                        <a href="#" style="font-size: 2.68ex">TypeScript</a>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section class="container flex-wrap pt-5">
+        <section class="container flex-wrap pt-5 col-5">
             <div class="section-title">
-
                 <h2>The Beginning</h2>
             </div>
             <p>Realizing the immense influence technology has on our world was a paradigm-shifting moment for me.
@@ -76,7 +142,6 @@
                 comprehend the societal ramifications of these advancements and reflect on the ethical and social
                 responsibilities that accompany them.</p>
             <div class="section-title">
-
                 <h2>Why I Chose the Tech Industry</h2>
             </div>
             <p>Technology has revolutionized the way we approach health and wellness, empowering individuals to take
@@ -88,6 +153,60 @@
                 participate in group activities and social support networks. As we continue to innovate and push the
                 boundaries of what is possible, it is imperative that we ensure that everyone has access to these
                 powerful tools, promoting inclusivity and equality in our society.
+            </p>
+            <div class="section-title">
+                <h2>Why Web Development</h2>
+            </div>
+
+            <p>Web development has the potential to change lives in numerous ways, as it provides a means of creating
+                online
+                platforms and applications that can enhance communication and collaboration, leading to greater
+                efficiency and
+                productivity. For example, web-based tools and platforms can be used by individuals and teams to
+                collaborate on
+                projects in real-time, increasing efficiency and productivity. Moreover, web development can help
+                individuals
+                and organizations streamline their workflows and automate tedious tasks, freeing up time and resources
+                to focus
+                on more meaningful work.
+                <br><br>
+                Furthermore, web development can provide opportunities for people to learn new skills and engage in the
+                digital
+                economy, which can open doors to new career paths and economic opportunities. By learning how to build
+                websites,
+                applications, and other online platforms, individuals can acquire valuable skills that are in high
+                demand in
+                today's job market. These skills can lead to fulfilling and lucrative careers, enabling individuals to
+                support
+                themselves and their families.
+                <br><br>
+                Moreover, web development can help connect people with information and resources they might not have
+                access to
+                otherwise. For example, online education platforms can provide access to courses and learning materials
+                that are
+                not available in traditional classrooms, while telemedicine applications can connect patients with
+                healthcare
+                services regardless of their location. Additionally, job search websites and professional networking
+                platforms
+                can help individuals find employment opportunities that match their skills and interests.
+                <br><br>
+                Finally, web development can be used to create websites and applications that promote social causes and
+                help
+                address societal issues, leading to positive impact on a global scale. For instance, websites and
+                applications
+                can be used to raise awareness about environmental issues, promote social justice causes, and facilitate
+                donations to charities and non-profit organizations.
+                <br><br>
+                In summary, web development has the potential to transform lives and make a significant contribution to
+                the
+                betterment of society. By providing a means of creating online platforms and applications, web
+                development can
+                enhance communication and collaboration, provide economic opportunities, connect people with information
+                and
+                resources, and promote social causes and positive societal change. As such, the field of web development
+                is an
+                exciting and important area of study that can have a meaningful impact on individuals and society as a
+                whole.
             </p>
             <div class="accordion pb-3" id="accordionExample">
                 <div class="accordion-item">
@@ -157,7 +276,6 @@
                     </div>
                 </div>
             </div>
-            <div id="map" style="width: 27rem; height: 25rem;"></div>
 
         </section>
 
@@ -445,6 +563,10 @@
         integrity="sha512-lo4YgiwkxsVIJ5mex2b+VHUKlInSK2pFtkGFRzHsAL64/ZO5vaiCPmdGP3qZq1h9MzZzghrpDP336ScWugUMTg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="public/js/carousel.js"></script>
+    <script src="public/js/jquery-tag-canvas.min.js"></script>
+    <script src="public/js/mission.js"></script>
+
+
 </body>
 
 </html>
