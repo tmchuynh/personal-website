@@ -10,10 +10,10 @@ $(document).ready(function() {
       weightMode:'both',
       weight: true,
       weightGradient: {
-       0:    '#f00', // red
-       //0.33: '#ff0', // yellow
+       0:    '#25569b', // red
+       0.33: '#0a66c2', // yellow
        //0.66: '#0f0', // green
-       1:    '#00f'  // blue
+       1:    '#707070'  // blue
       }
     },'tags')) {
       // something went wrong, hide the canvas container
