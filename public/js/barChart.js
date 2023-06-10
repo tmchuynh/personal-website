@@ -2,7 +2,7 @@
 
 new Chart(document.getElementById("barChart"), {
     type: 'bar',
-    data: {
+    data: { 
         labels: ["JavaScript", "HTML/CSS", "SQL", "Python", "Java", "Bash/Shell/PowerShell", "C#", "TypeScript", "PHP", "C++", "C", "Go", "Kotlin", "Ruby", "Swift", "R", "Rust", "Objective-C"],
         datasets: [{
             label: "title",
