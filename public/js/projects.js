@@ -39,8 +39,6 @@ function populate(name, updated, languages, element) {
     title.setAttribute("href", element.html_url);
     card.appendChild(title);
 
-    
-
     var screenshotSrc = "../public/screenshots/" + name + ".png";
     if (checkFileExist(screenshotSrc)) {
         var screenshotImg = createScreenshotImage(screenshotSrc, name);
