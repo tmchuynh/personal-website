@@ -31,14 +31,11 @@ const addArticle = article => {
 
     const date = article.published_timestamp;
     let parts = date.split("T")[0].split("-");
-    let year = parts[0];
-    let month = parts[1];
-    let day = parts[2];
-    clone.querySelector('.updated').textContent = "Published on " + month + "/" + day + "/" + year;
+
+    clone.querySelector('.updated').textContent = formatDate(parts);
 
     const reading_time = article.reading_time_minutes + " minute read";
     clone.querySelector('.reading-time').textContent = reading_time;
-
 
     clone.querySelector('.url').href = article.canonical_url;
 
@@ -53,6 +50,21 @@ const addArticle = article => {
         count += 1;
     }
     return count;
+}
+
+/**
+ * The function formats a given date into a string with a specific format.
+ * @param date - The `date` parameter is expected to be an array with three elements representing the
+ * year, month, and day of a date.
+ * @returns The function `formatDate` is returning a string that includes the formatted date in the
+ * format "Published on MM/DD/YYYY".
+ */
+function formatDate(date) {
+    let year = date[0];
+    let month = date[1];
+    let day = date[2];
+
+    return "Published on " + month + "/" + day + "/" + year;
 }
 
 getArticles();
