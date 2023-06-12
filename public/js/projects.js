@@ -39,12 +39,7 @@ function populate(name, updated, languages, element) {
     title.setAttribute("href", element.html_url);
     card.appendChild(title);
 
-    var date = updated.split("T")[0];
-    var date_0 = date.split("-");
-
-    var year = date_0[0];
-    var month = date_0[1];
-    var day = date_0[2];
+    
 
     var screenshotSrc = "../public/screenshots/" + name + ".png";
     if (checkFileExist(screenshotSrc)) {
@@ -59,13 +54,32 @@ function populate(name, updated, languages, element) {
     subtitle.appendChild(document.createTextNode("Last updated on:"));
     dateElement.appendChild(subtitle);
 
+    var date = updated.split("T")[0];
+    
     var lastUpdated = createCodeElement("last-updated", "mt-0");
-    lastUpdated.innerHTML = month + "/" + day + "/" + year;
+    lastUpdated.innerHTML = formatDate(date);
     dateElement.appendChild(lastUpdated);
 
     card.appendChild(dateElement);
 
     project_container.appendChild(card);
+}
+
+/**
+ * The function takes a date in the format of "YYYY-MM-DD" and returns it in the format of
+ * "MM/DD/YYYY".
+ * @param date - The input date in the format "YYYY-MM-DD".
+ * @returns The function `formatDate` takes a date string in the format "YYYY-MM-DD" and returns a new
+ * string in the format "MM/DD/YYYY".
+ */
+function formatDate(date) {
+    var date_0 = date.split("-");
+
+    var year = date_0[0];
+    var month = date_0[1];
+    var day = date_0[2];
+
+    return month + "/" + day + "/" + year;
 }
 
 /**
