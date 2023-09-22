@@ -26,19 +26,6 @@ textarea {
     overflow: auto;
 }
 
-.container-fluid {
-    margin: 60px auto;
-    position: relative;
-    .section-title {
-        border: none !important;
-        form {
-            margin: 50px 0;
-            width: 50rem;
-        }
-    }
-}
-
-
 .email {
     float: right;
     width: 45%;
@@ -128,14 +115,12 @@ textarea {
     color: $grey;
 }
 
-
 @media screen and (max-width: 768px) {
     #container-fluid {
         margin: 20px auto;
         width: 95%;
     }
 }
-
 
 @media screen and (max-width: 420px) {
     input[type="text"],

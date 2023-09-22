@@ -116,8 +116,8 @@ section {
     text-align: center;
     padding: 0rem;
     padding-top: 1rem;
-    border-left: 0.25px solid grey;
-    border-right: 0.25px solid grey;
+    border-left: 0.25px solid grey !important;
+    border-right: 0.25px solid grey !important;
     min-width: 20rem;
     min-height: 100%; }
     section .section-title h2 {
@@ -229,6 +229,14 @@ section {
     @media only screen and (max-width: 767px) {
       .site-footer .copyright-text a {
         margin-right: 0; } }
+  .site-footer .container-fluid {
+    margin: 60px auto;
+    position: relative; }
+    .site-footer .container-fluid .section-title {
+      border: none !important; }
+      .site-footer .container-fluid .section-title form {
+        margin: 50px 0;
+        width: 50rem; }
   @media only screen and (max-width: 767px) {
     .site-footer {
       padding-bottom: 0; } }

@@ -128,7 +128,6 @@ var prog = {};
                 settings.height +
                 "&fmt=jpg";
 
-            //   var image = "https://via.placeholder.com/310x400/"+product.color+"/FFFFFF.png?text="+ product.seo;
 
             var txt = "";
             txt += "\n<li data-order='" + i + "'>";
@@ -153,7 +152,6 @@ var prog = {};
 
         // modify the css for this carousel
         var cssThis = function () {
-            $elem.css({ "max-width": settings.max + "px" });
             var h = settings.height + "px";
 
             if (settings.title == true) {
