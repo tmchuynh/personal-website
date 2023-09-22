@@ -109,24 +109,26 @@ a {
   # Navigation Bar (Desktop)
 --------------------------------------------------------------*/
 
-.bg-body-tertiary {
-    background-color: $grey !important;
-    box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
-    -moz-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
-    -webkit-box-shadow: 0px 5px 17px 4px rgba(68, 68, 68, 0.75);
-}
-
-.navbar-nav {
+.navbar {
     min-width: fit-content;
     text-transform: uppercase;
     letter-spacing: 7.04px;
     font-size: 1rem;
+    padding: auto;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    gap: 2rem;
 
-    .nav-item a {
-        color: white;
+    .navbar-brand {
+        color: $black;
+    }
+
+    .nav-item {
+        color: black;
         margin: 0 1rem;
         &:hover {
-            color: $black;
+            color: $grey;
         }
     }
     @media (min-width: 1024px) {
@@ -142,15 +144,18 @@ a {
   # Sections General
   --------------------------------------------------------------*/
 section {
-    padding: 0 3rem;
     overflow: hidden;
     justify-content: center;
     align-content: center;
     align-items: center;
+    display: flex;
 
     .section-title {
         text-align: center;
         padding: 0rem;
+        border: 0.25px solid grey;
+        min-width: 20rem;
+        min-height: 100%;
 
         h2 {
             /*name of section */
@@ -214,60 +219,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # DevCard
-  --------------------------------------------------------------*/
-
-.introduction {
-    padding: 0 0 2rem 0;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-
-    &.text-left {
-        text-align: left;
-        padding: 0;
-    }
-}
-
-.limit {
-    justify-content: $limit-justify-content;
-    align-items: $limit-align-items;
-    display: flex;
-    flex-direction: column;
-}
-
-.devcard {
-    justify-content: $devcard-justify-content;
-    padding: 0rem;
-    min-width: 30rem;
-    margin: 2rem auto;
-
-    @media (max-width: 1200px) {
-        width: 90%;
-        margin: auto;
-        justify-content: center;
-        padding: 3rem 1rem;
-        min-width: 50px;
-        width: 85%;
-    }
-}
-
-.info-summary {
-    flex-direction: column;
-}
-
-.about-me {
-    padding: 0 3rem 1rem 3rem;
-    margin: 4rem 0 0 0;
-    text-align: center;
-    width: 100%;
-
-    @media (max-width: 1200px) {
-        margin: 0;
-        padding: 0 3rem 1rem 3rem;
-    }
-}
-/*--------------------------------------------------------------
   # Images
   --------------------------------------------------------------*/
 .images {
@@ -276,33 +227,6 @@ section {
 
     @media (max-width: 1654px) {
         display: block;
-    }
-}
-
-/*--------------------------------------------------------------
-  # Info Summary
-  --------------------------------------------------------------*/
-#social-badges {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    img {
-        margin: 10px;
-        height: 2rem;
-    }
-}
-
-#threeD-commit {
-    width: 65%;
-
-    @media (max-width: 768px) {
-        width: 90%;
-    }
-
-    @media (max-width: 1200px) {
-        width: 75%;
     }
 }
 
@@ -324,64 +248,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-  # Experience
-  --------------------------------------------------------------*/
-.experience {
-    margin: 1rem -3.5rem;
-    text-align: left;
-
-    section {
-        margin: 1.25rem 0;
-    }
-
-    p {
-        margin-left: 4rem;
-    }
-}
-
-.skills-list {
-    margin-left: 3rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-
-    &.links {
-        display: inline-flex;
-    }
-
-    .btn {
-        background-color: $light-blue;
-        color: $dark-blue;
-        margin-bottom: 5px;
-        border-radius: 2px;
-        text-transform: uppercase;
-        height: fit-content;
-    }
-
-    .keys {
-        position: absolute;
-        top: -2.75rem;
-        left: 239px;
-        height: fit-content;
-    }
-}
-
-/*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
 
 .site-footer {
-    background-color: $grey;
-    padding: 45px 0 20px;
     font-size: 15px;
     line-height: 2rem;
     color: $grey;
-    hr {
-        /*line across*/
-        border-top-color: $light-blue;
-        opacity: 0.5;
-    }
+    display: flex;
     h6 {
         /*category names*/
         color: $light-blue;
@@ -399,37 +273,6 @@ section {
             margin-top: 15px;
         }
     }
-    a {
-        /*the hyperlinks*/
-        color: $light-blue;
-        text-decoration: none;
-        letter-spacing: 5px;
-        margin-right: 10px;
-        @media (max-width: 32.5rem) {
-            margin-right: 25px;
-        }
-        &:active + .vanish,
-        &:focus + .vanish,
-        &:hover + .vanish {
-            align-items: center;
-            position: absolute;
-            visibility: visible;
-            display: inline-block;
-            left: -33px;
-        }
-    }
-    .vanish {
-        color: $white;
-        display: none;
-        font-size: 22px;
-        @media only screen and (max-width: 991px) {
-            color: $dark-blue;
-            display: inline-block;
-            align-items: center;
-            position: relative;
-            left: -7px;
-        }
-    }
     .copyright-text {
         /* small text to left of icons */
         margin: 0;
@@ -443,108 +286,6 @@ section {
             }
         }
     }
-    .social-icons {
-        /*icons at the end */
-        display: contents;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        li {
-            display: inline-block;
-            margin: 10px 5px;
-        }
-        a {
-            /*links within the icons */
-            width: 3.5rem;
-            height: 3.5rem;
-            line-height: 3.25rem;
-            margin-left: 5px;
-            margin-right: 5px;
-            border-radius: 100%;
-            background-color: #33353d;
-            color: #818a91;
-            display: inline-block;
-            text-align: center;
-            -webkit-transition: all 0.2s linear;
-            -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-            font-size: 2rem;
-            i {
-                padding: 0.75rem;
-            }
-            &.linkedin {
-                &:hover {
-                    color: $white;
-                    background-color: $linkedin;
-                }
-                @media screen and (max-width: 767px) {
-                    color: $white;
-                    background-color: $linkedin;
-                }
-            }
-            &.devto {
-                &:hover {
-                    color: $white;
-                    background-color: $genuine_black;
-                }
-                @media screen and (max-width: 767px) {
-                    color: $genuine_black;
-                    background-color: $white;
-                }
-            }
-            &.twitter {
-                &:hover {
-                    color: $white;
-                    background-color: $twitter;
-                }
-                @media screen and (max-width: 767px) {
-                    background-color: $white;
-                    color: $twitter;
-                }
-            }
-            &.codepen {
-                &:hover {
-                    color: $genuine_black;
-                    background-color: $white;
-                }
-                @media screen and (max-width: 767px) {
-                    color: $genuine_black;
-                    background-color: $white;
-                }
-            }
-            &.github {
-                &:hover {
-                    background-color: $white;
-                    color: $grey;
-                }
-                @media screen and (max-width: 767px) {
-                    background-color: $white;
-                    color: $grey;
-                }
-            }
-            &.gmail {
-                &:hover {
-                    color: $white;
-                    background-color: $gmail;
-                }
-                @media screen and (max-width: 767px) {
-                    color: $white;
-                    background-color: $gmail;
-                }
-            }
-        }
-        @media only screen and (max-width: 991px) {
-            display: block;
-        }
-    }
-    .keys {
-        height: 5rem;
-        margin-bottom: 2rem;
-        float: right;
-    }
     @media only screen and (max-width: 767px) {
         padding-bottom: 0;
     }
@@ -553,14 +294,68 @@ section {
 .footer-links {
     /* ul element itself */
     padding-left: 0;
+    padding-top: 2rem;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     li {
         /* list elements */
-        display: block;
+
         margin-left: 3.125rem;
         position: relative;
+        a {
+            color: $black;
+            &:hover + .bxl-linkedin {
+                color: $white;
+                background-color: $linkedin;
+                visibility: visible;
+            }
+            &:hover + .bx-code-block {
+                color: $grey;
+                visibility: visible;
+            }
+            &:hover + .bxl-github {
+                color: $grey;
+                visibility: visible;
+            }
+            &:hover + .bxs-briefcase-alt-2 {
+                visibility: visible;
+                color: $black;
+            }
+        }
+        i {
+            visibility: hidden;
+            font-size: 1.25rem;
+            &.bxl-linkedin {
+                @media (max-width: 767px) {
+                    color: $white;
+                    background-color: $linkedin;
+                    visibility: visible;
+                }
+            }
+            &.bx-code-block {
+                @media (max-width: 767px) {
+                    color: $grey;
+                    visibility: visible;
+                }
+            }
+            &.bxl-github {
+                @media (max-width: 767px) {
+                    background-color: $white;
+                    color: $grey;
+                    visibility: visible;
+                }
+            }
+            &.bxs-briefcase-alt-2 {
+                @media (max-width: 767px) {
+                    background-color: $white;
+                    color: $black;
+                    visibility: visible;
+                }
+            }
+        }
     }
     @media (max-width: 520px) {
         display: block;
