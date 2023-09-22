@@ -3,11 +3,23 @@ ul {
   margin-left: 2rem; }
 
 .languages {
-  font-size: 2rem;
   position: relative;
   display: flex;
   justify-content: end;
   gap: 1rem;
   margin: auto;
-  align-items: flex-end;
-  color: #25569b; }
+  align-items: flex-end; }
+  .languages i {
+    font-size: 2rem; }
+    .languages i.bxl-java {
+      color: #d50308; }
+    .languages i.bxl-javascript {
+      color: #f0d44c; }
+    .languages i.bxl-python {
+      color: #5ea9eb; }
+    .languages i.bxl-mongodb {
+      color: #0da31a; }
+    .languages i.bxl-sass {
+      color: #d742f5; }
+    .languages i.bxs-data {
+      color: #677cd0; }
