@@ -20,7 +20,7 @@ $font-family: "Playfair Display", serif;
 $font-family-0: "PT Sans Narrow", sans-serif;
 $bold-font-weight: 700;
 $border-radius: 0.25rem;
-$hover-transition: all 150ms ease;
+$hover-transition: all 175ms ease;
 $linkedin: #0a66c2;
 $twitter: #56b9ff;
 $gmail: #d93025;
@@ -59,24 +59,29 @@ body {
 --------------------------------------------------------------*/
 
 .btn {
-    display: inline-block;
-    padding: 0.75rem 1rem 0.5rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    margin: 1rem;
-    background-color: $dark-blue;
-    border-radius: $border-radius;
-    text-decoration: none;
-    font-weight: $bold-font-weight;
+    background: none;
+    border: solid 2px $grey;
     color: $grey;
-    text-align: center;
-    box-shadow: inset 0 0 0 2px $dark-blue;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: $hover-transition;
+    -moz-transition: $hover-transition;
+    -ms-transition: $hover-transition;
+    -o-transition: $hover-transition;
     transition: $hover-transition;
 
-    &:focus {
-        box-shadow: inset 0 0 0 2px $grey;
-        outline: none;
+    &:hover {
+        background: $grey;
+        color: #f2f3eb;
     }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -164,7 +169,8 @@ section {
         h2 {
             /*name of section */
             font-size: 2rem;
-            font-weight: bold;
+            font-weight: 700;
+            letter-spacing: 7px;
             text-transform: uppercase;
             margin-bottom: 1.25rem;
             padding-bottom: 1.25rem;
@@ -262,6 +268,7 @@ section {
     line-height: 2rem;
     color: $grey;
     display: flex;
+    justify-content: space-around;
     h6 {
         /*category names*/
         color: $light-blue;
@@ -298,7 +305,6 @@ section {
 }
 
 .footer-links {
-    /* ul element itself */
     padding-left: 0;
     padding-top: 2rem;
     list-style: none;
@@ -307,8 +313,6 @@ section {
     justify-content: center;
     gap: 1rem;
     li {
-        /* list elements */
-
         margin-left: 3.125rem;
         position: relative;
         a {
