@@ -28,7 +28,6 @@ header {
     background: #303e49;
     h1 {
         color: #ffffff;
-        font-size: 18px;
         font-size: 1.125rem;
     }
 }
@@ -37,7 +36,6 @@ header {
         height: 300px;
         line-height: 300px;
         h1 {
-            font-size: 24px;
             font-size: 1.5rem;
         }
     }
@@ -219,25 +217,13 @@ header {
         line-height: 1.6;
     }
     p,
-    .cd-read-more,
     &.cd-date {
-        font-size: 13px;
         font-size: 0.8125rem;
     }
-    .cd-read-more,
     .cd-date {
         display: inline-block;
     }
-    .cd-read-more {
-        float: right;
-        padding: 0.8em 1em;
-        background: #acb7c0;
-        color: #ffffff;
-        border-radius: 0.25em;
-        &:hover {
-            background-color: #bac4cb;
-        }
-    }
+
     .cd-date {
         float: left;
         padding: 0.8em 0;
@@ -257,16 +243,12 @@ header {
 @media only screen and (min-width: 768px) {
     .cd-timeline-content {
         h2 {
-            font-size: 20px;
             font-size: 1.25rem;
         }
         p {
-            font-size: 16px;
             font-size: 1rem;
         }
-        .cd-read-more,
         .cd-date {
-            font-size: 14px;
             font-size: 0.875rem;
         }
     }
@@ -282,15 +264,12 @@ header {
             border-color: transparent;
             border-left-color: #ffffff;
         }
-        .cd-read-more {
-            float: left;
-        }
+
         .cd-date {
             position: absolute;
             width: 100%;
             left: 122%;
             top: 6px;
-            font-size: 16px;
             font-size: 1rem;
         }
     }
@@ -304,9 +283,7 @@ header {
         border-color: transparent;
         border-right-color: #ffffff;
     }
-    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-        float: right;
-    }
+
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
         left: auto;
         right: 122%;
