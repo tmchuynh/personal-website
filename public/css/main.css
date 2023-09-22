@@ -76,11 +76,12 @@ a {
   text-transform: uppercase;
   letter-spacing: 7.04px;
   font-size: 1rem;
-  padding: auto;
+  padding: 1rem 4rem;
   margin: auto;
-  width: 90%;
+  width: 100%;
   display: flex;
-  gap: 2rem; }
+  gap: 2rem;
+  border-bottom: 0.125px solid #707070; }
   .navbar .navbar-brand {
     color: #161313; }
   .navbar .nav-item {
@@ -108,7 +109,8 @@ section {
     text-align: center;
     padding: 0rem;
     padding-top: 1rem;
-    border: 0.25px solid grey;
+    border-left: 0.25px solid grey;
+    border-right: 0.25px solid grey;
     min-width: 20rem;
     min-height: 100%; }
     section .section-title h2 {
@@ -189,6 +191,7 @@ section {
   # Footer
   --------------------------------------------------------------*/
 .site-footer {
+  border-top: 0.125px solid #707070;
   font-size: 15px;
   line-height: 2rem;
   color: #707070;
