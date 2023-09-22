@@ -46,8 +46,7 @@ a {
     text-decoration: none;
     &:hover {
         transform: rotate(0);
-    color: var(--color);
-
+        color: var(--color);
     }
     p {
         font-size: 0.75em;
@@ -67,7 +66,6 @@ a {
             transition: all, var(--transition-time);
         }
     }
-    
 }
 
 .card:hover .tags .tag {
@@ -100,7 +98,6 @@ a {
     width: 200%;
     height: 200%;
 }
-
 
 .card-grid-space .num {
     font-size: 3em;
@@ -155,5 +152,14 @@ a {
         h1 {
             margin: 0;
         }
+    }
+}
+
+.qualifications {
+    display: flex;
+    padding: 2rem;
+    img {
+        width: 50%;
+        margin-right: 3rem;
     }
 }

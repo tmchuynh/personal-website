@@ -125,3 +125,10 @@ a {
     text-align: center; }
     .info h1 {
       margin: 0; } }
+
+.qualifications {
+  display: flex;
+  padding: 2rem; }
+  .qualifications img {
+    width: 50%;
+    margin-right: 3rem; }
