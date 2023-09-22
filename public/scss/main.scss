@@ -80,8 +80,6 @@ body {
         background: $grey;
         color: #f2f3eb;
     }
-
-
 }
 
 /*--------------------------------------------------------------
@@ -149,6 +147,11 @@ a {
 /*--------------------------------------------------------------
   # Sections General
   --------------------------------------------------------------*/
+.row {
+    border-bottom: 0.25px solid grey;
+
+}
+
 section {
     overflow: hidden;
     justify-content: center;
@@ -263,7 +266,6 @@ section {
   --------------------------------------------------------------*/
 
 .site-footer {
-    border-top: 0.125px solid $grey;
     font-size: 15px;
     line-height: 2rem;
     color: $grey;
