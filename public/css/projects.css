@@ -1,117 +1,13 @@
-#project-tiles {
-  padding-top: 3rem; }
+ul {
+  text-align: left;
+  margin-left: 2rem; }
 
-#project-list {
+.languages {
+  font-size: 2rem;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  padding: 0rem 3rem 1rem 3rem;
-  flex-wrap: wrap;
-  align-content: stretch;
-  align-items: center;
-  justify-content: center;
-  margin: 0rem 1rem !important; }
-  #project-list .cards {
-    color: #25569b;
-    display: flex;
-    flex-direction: column;
-    width: 12.5rem;
-    min-width: 25rem;
-    height: 15.625rem;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 1rem;
-    margin: 1rem 0.8rem;
-    box-shadow: 0.25rem 0.625rem 1.5rem #b4b4b4; }
-    #project-list .cards .img-screenshot {
-      width: 80%;
-      height: 30%;
-      object-fit: scale-down; }
-    #project-list .cards .date {
-      padding: 1.25rem;
-      display: flex;
-      flex-direction: column; }
-      #project-list .cards .date .last-updated {
-        color: #707070;
-        font-family: "Roboto Mono", monospace; }
-    #project-list .cards:hover {
-      box-shadow: 0.25rem 0.75rem 1.75rem #b4b4b4; }
-      #project-list .cards:hover .title {
-        color: #707070; }
-      #project-list .cards:hover .pages {
-        color: #707070; }
-      #project-list .cards:hover .last-updated {
-        color: #707070; }
-    #project-list .cards .title {
-      font-size: 1.5rem;
-      color: black;
-      text-transform: capitalize; }
-    #project-list .cards .pages {
-      margin-top: 0.5rem; }
-    #project-list .cards i {
-      font-size: 2rem;
-      justify-content: center;
-      text-align: center; }
-    #project-list .cards .python {
-      color: #5ea9eb;
-      font-size: 2rem; }
-    #project-list .cards .javascript {
-      color: #f0d44c;
-      font-size: 2rem; }
-    #project-list .cards .typescript,
-    #project-list .cards .csharp {
-      width: 2rem;
-      font-size: 2rem; }
-    #project-list .cards .html {
-      color: #e34c27;
-      font-size: 2rem; }
-    #project-list .cards .css {
-      color: #4266f5;
-      font-size: 2rem; }
-    #project-list .cards .plain-java {
-      color: #d50308;
-      font-size: 2rem; }
-    #project-list .cards .scss {
-      color: #d742f5;
-      font-size: 2rem; }
-
-.animated.fadeIn {
-  -webkit-animation-name: fadeIn;
-  -moz-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
-  animation-name: fadeIn; }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  20% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  60% {
-    opacity: 0; }
-  20% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  justify-content: end;
+  gap: 1rem;
+  margin: auto;
+  align-items: flex-end;
+  color: #25569b; }
