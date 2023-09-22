@@ -153,6 +153,7 @@ section {
     .section-title {
         text-align: center;
         padding: 0rem;
+        padding-top: 1rem;
         border: 0.25px solid grey;
         min-width: 20rem;
         min-height: 100%;
@@ -194,7 +195,7 @@ section {
             text-transform: uppercase;
             margin-bottom: 14px;
             margin-top: 14px;
-            padding-left: 6rem;
+            padding-left: 4rem;
             position: relative;
             color: $grey;
             font-weight: bold;
@@ -214,6 +215,7 @@ section {
         p {
             margin: auto;
             width: 90%;
+            text-align: left;
         }
     }
 }
