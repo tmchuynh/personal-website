@@ -56,15 +56,96 @@ nav {
 }
 
 .hero-section {
-    padding: 4rem;
-
+    padding: 2rem;
+    position: relative;
     h1 {
         font-size: 8rem;
-        p {
-            padding: 0;
-            margin: 0;
-            color: $green;
-        }
+    }
+}
+
+#flip {
+    height: 175px;
+    overflow: hidden;
+}
+
+#flip > div > div {
+    padding: 4px 12px;
+    height: 200px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+#flip div:first-child {
+    animation: show 5s linear infinite;
+}
+
+#flip div:nth-child(2n-1) div {
+    color: $green;
+}
+#flip div:nth-child(2n) div {
+    color: $orange;
+}
+
+@keyframes show {
+    0% {
+        margin-top: 100px;
+    }
+    5% {
+        margin-top: 0px;
+    }
+    33% {
+        margin-top: 300px;
+    }
+    38% {
+        margin-top: 200px;
+    }
+    66% {
+        margin-top: 0px;
+    }
+    71% {
+        margin-top: 300px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+// p {
+//     position: fixed;
+//     width: 100%;
+//     bottom: 30px;
+//     font-size: 12px;
+//     color: #999;
+//     margin-top: 200px;
+// }
+
+@keyframes show {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
     }
 }
 
@@ -74,7 +155,7 @@ section {
     display: flex;
 
     .section-title {
-        padding: 1.5rem;
+        padding: 1rem;
 
         width: 50%;
 

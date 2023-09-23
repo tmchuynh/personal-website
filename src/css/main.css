@@ -38,20 +38,72 @@ nav {
     color: #181f1c; }
 
 .hero-section {
-  padding: 4rem; }
+  padding: 2rem;
+  position: relative; }
   .hero-section h1 {
     font-size: 8rem; }
-    .hero-section h1 p {
-      padding: 0;
-      margin: 0;
-      color: #059259; }
+
+#flip {
+  height: 175px;
+  overflow: hidden; }
+
+#flip > div > div {
+  padding: 4px 12px;
+  height: 200px;
+  margin-bottom: 45px;
+  display: inline-block; }
+
+#flip div:first-child {
+  animation: show 5s linear infinite; }
+
+#flip div:nth-child(2n-1) div {
+  color: #059259; }
+
+#flip div:nth-child(2n) div {
+  color: #ff934f; }
+
+@keyframes show {
+  0% {
+    margin-top: 100px; }
+  5% {
+    margin-top: 0px; }
+  33% {
+    margin-top: 300px; }
+  38% {
+    margin-top: 200px; }
+  66% {
+    margin-top: 0px; }
+  71% {
+    margin-top: 300px; }
+  99.99% {
+    margin-top: 0px; }
+  100% {
+    margin-top: -270px; } }
+
+@keyframes show {
+  0% {
+    margin-top: -270px; }
+  5% {
+    margin-top: -180px; }
+  33% {
+    margin-top: -180px; }
+  38% {
+    margin-top: -90px; }
+  66% {
+    margin-top: -90px; }
+  71% {
+    margin-top: 0px; }
+  99.99% {
+    margin-top: 0px; }
+  100% {
+    margin-top: -270px; } }
 
 section {
   position: relative;
   margin: 2rem;
   display: flex; }
   section .section-title {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 50%; }
     section .section-title h1 {
       font-size: 1.5rem; }
