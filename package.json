@@ -19,6 +19,7 @@
   "homepage": "https://github.com/tmchuynh/personal-website#readme",
   "dependencies": {
     "browserify": "^17.0.0",
+    "flickity": "^3.0.0",
     "foundation-sites": "^6.7.5",
     "node-sass": "^8.0.0",
     "octokit": "^2.0.14",

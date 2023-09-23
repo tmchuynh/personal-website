@@ -25,7 +25,11 @@
     <link href="src/css/main.css" rel="stylesheet" type="text/css">
 
     <link href="src/css/cards.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="src/css/testimonial.css" rel="stylesheet" type="text/css">
+
+    <link href="src/css/footprints.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -42,7 +46,51 @@
     </section>
 
     <section>
-        <div class="section-title"></div>
+        <div class="section-title">
+            <svg id="svg-sprite">
+                <symbol id="paw" viewBox="0 0 249 209.32">
+                    <image
+                        xlink:href="http://icons.veryicon.com/png/System/Icons8%20Metro%20Style/Tracks%20Footprints%20Left%20shoe.png"
+                        x="0" y="0" height="100px" width="100px" />
+                </symbol>
+            </svg>
+
+            <div class="ajax-loader mx-5 px-3">
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+                <div class="paw"><svg class="icon">
+                        <use xlink:href="#paw" />
+                    </svg></div>
+            </div>
+        </div>
+
+
         <div class="section-title right">
             <h1>Esse aliquip quis duis duis dolor est et.</h1>
             <p>Dolor consequat incididunt aliquip ipsum ad. Lorem laboris cupidatat excepteur dolore ut mollit fugiat
@@ -140,46 +188,7 @@
         </div>
     </section>
 
-    <section class="testimonals">
-        <div id="carousel">
-            <div class="testimonial-quote group">
-                <img src="http://placehold.it/120x120">
-                <div class="quote-container">
-                    <blockquote>
-                        <p>Enim exercitation incididunt incididunt quis incididunt occaecat consectetur occaecat quis ad reprehenderit adipisicing. Exercitation laborum laboris non id nisi voluptate commodo in quis Lorem ad ad cupidatat. Ad pariatur elit non pariatur enim nostrud non id enim enim non velit aliquip. Id dolore cillum reprehenderit qui do aute.”</p>
-                    </blockquote>  
-                    <cite><span>Kristi Bruno</span><br>
-                        Social Media Specialist<br>
-                        American College of Chest Physicians
-                    </cite>
-                </div>
-            </div> 
-            <div class="testimonial-quote group">
-                <img src="http://placehold.it/120x120">
-                <div class="quote-container">
-                    <blockquote>
-                        <p>Commodo laboris commodo cupidatat aliqua aute exercitation adipisicing ea. Cupidatat officia fugiat enim sint mollit sit exercitation reprehenderit sit velit sit laboris consectetur. Lorem amet in voluptate culpa.”</p>
-                    </blockquote>  
-                    <cite><span>Kristi Bruno</span><br>
-                        Social Media Specialist<br>
-                        American College of Chest Physicians
-                    </cite>
-                </div>
-            </div> 
-            <div class="testimonial-quote group">
-                <img src="http://placehold.it/120x120">
-                <div class="quote-container">
-                    <blockquote>
-                        <p>Esse ipsum do sunt elit tempor dolor. Ad commodo nulla mollit ullamco in occaecat minim aute ullamco incididunt Lorem aliqua id. Voluptate ea in sint labore ipsum. Consectetur in ullamco proident adipisicing adipisicing aliqua esse magna laboris non labore incididunt tempor.”</p>
-                    </blockquote>  
-                    <cite><span>Kristi Bruno</span><br>
-                        Social Media Specialist<br>
-                        American College of Chest Physicians
-                    </cite>
-                </div>
-            </div> 
-        </div>
-    </section>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -187,5 +196,7 @@
     crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="src/js/testimonialcarousel.js"></script>
 
 </html>
