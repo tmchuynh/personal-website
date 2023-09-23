@@ -1,0 +1,94 @@
+$white: #f2eee7;
+$off-white: #ecdcb0;
+$green: #059259;
+$orange: #ff934f;
+$black: #181f1c;
+$light-brown: #504746;
+$font-family: "Titillium Web", sans-serif;
+$font-family-0: "Merienda", cursive;
+$border: 1px solid $black;
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $white;
+    font-family: $font-family-0;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        color: $orange;
+    }
+}
+
+.btn {
+    font-family: $font-family-0;
+    background-color: $orange;
+    color: $white;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    &:hover {
+        transition: cubic-bezier(1, 0, 0, 1) 50ms;
+        background-color: $green;
+    }
+}
+
+nav {
+    font-family: $font-family;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .nav-item {
+        font-weight: 900;
+        text-decoration: none !important;
+        font-size: 2rem;
+        color: $black;
+    }
+}
+
+.hero-section {
+    padding: 4rem;
+
+    h1 {
+        font-size: 8rem;
+        p {
+            padding: 0;
+            margin: 0;
+            color: $green;
+        }
+    }
+}
+
+section {
+    position: relative;
+    margin: 2rem;
+    display: flex;
+
+    .section-title {
+        padding: 1.5rem;
+
+        width: 50%;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-family: $font-family;
+        }
+        &.right {
+            right: 0;
+        }
+        &.left {
+            left: 0;
+        }
+    }
+}
