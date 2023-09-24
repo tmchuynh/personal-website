@@ -30,22 +30,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; }
+  margin: auto;
+  margin-top: 2rem; }
   nav .nav-item {
     font-weight: 900;
     text-decoration: none !important;
     font-size: 2rem;
     color: #181f1c;
     text-transform: uppercase; }
-  nav #marker {
-    position: absolute;
-    left: 0;
-    height: 4px;
-    width: 0;
-    background: #000;
-    bottom: -8px;
-    transition: .5s;
-    border-radius: 4px; }
 
 .hero-section {
   padding: 3rem;
@@ -87,8 +79,9 @@ nav {
 
 section {
   position: relative;
+  display: flex;
   margin: 2rem;
-  display: flex; }
+  padding: 2rem 0; }
   section .section-title {
     padding: 1rem;
     width: 50%; }

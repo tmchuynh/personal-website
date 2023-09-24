@@ -49,6 +49,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: 2rem;
 
     .nav-item {
         font-weight: 900;
@@ -57,16 +58,6 @@ nav {
         color: $black;
         text-transform: uppercase;
     }
-    #marker{
-        position: absolute;
-        left: 0;
-        height: 4px;
-        width: 0;
-        background: #000;
-        bottom: -8px;
-        transition: .5s;
-        border-radius: 4px;
-      }
 }
 
 .hero-section {
@@ -127,8 +118,9 @@ nav {
 
 section {
     position: relative;
-    margin: 2rem;
     display: flex;
+    margin: 2rem;
+    padding: 2rem 0;
 
     .section-title {
         padding: 1rem;
