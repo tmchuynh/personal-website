@@ -8,7 +8,7 @@
   text-transform: uppercase;
   z-index: 999; }
   .heading:after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 100%;
     left: 50%;
@@ -200,6 +200,7 @@
     color: #ffffff;
     font-size: 22px; }
 
-.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+.testimonial .carousel-control-next-icon,
+.testimonial .carousel-control-prev-icon {
   width: 35px;
   height: 35px; }
