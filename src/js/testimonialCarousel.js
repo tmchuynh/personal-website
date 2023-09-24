@@ -1,8 +1,13 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      autoplayHoverPause: true
+    $(".owl-carousel").Flicity({
+      draggable: false,
+      prevNextButton: false,
+      pageDots: false,
+      wrapAround: true,
+      groupCells: false,
+      autoPlay: true,
+      autoPlay: 3500,
+      pauseAutoPlayOnHover: true,
+      adaptiveHeight: true
     });
   });
