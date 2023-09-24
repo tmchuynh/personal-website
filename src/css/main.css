@@ -35,7 +35,8 @@ nav {
     font-weight: 900;
     text-decoration: none !important;
     font-size: 2rem;
-    color: #181f1c; }
+    color: #181f1c;
+    text-transform: uppercase; }
 
 .hero-section {
   padding: 2rem;
