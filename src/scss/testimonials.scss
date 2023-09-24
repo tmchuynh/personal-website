@@ -61,7 +61,7 @@
 		padding-bottom: 50px;
 	}
 }
-#testimonial4 {
+#testimonials {
 	.carousel-inner {
 		&:hover {
 			cursor: -moz-grab;
@@ -76,7 +76,7 @@
 		}
 	}
 }
-.testimonial4_indicators {
+.testimonials_indicators {
 	.carousel-indicators {
 		left: 0;
 		margin: 0;
@@ -124,7 +124,7 @@
 		}
 	}
 }
-.testimonial4_control_button {
+.testimonials_control_button {
 	.carousel-control {
 		top: 175px;
 		opacity: 1;
@@ -160,13 +160,13 @@
 		}
 	}
 }
-.testimonial4_control_button .carousel-control.left:hover,
-.testimonial4_control_button .carousel-control.right:hover {
+.testimonials_control_button .carousel-control.left:hover,
+.testimonials_control_button .carousel-control.right:hover {
 	color: #000;
 	background: #fff;
 	border: 2px solid #fff;
 }
-.testimonial4_header {
+.testimonials_header {
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -184,7 +184,7 @@
 		text-transform: uppercase;
 	}
 }
-.testimonial4_slide {
+.testimonials_slide {
 	top: 0;
 	left: 0;
 	right: 0;
