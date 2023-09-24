@@ -74,6 +74,7 @@ nav {
             padding: 4px 12px;
             margin-bottom: 45px;
             display: inline-block;
+
         }
         &:first-child {
             animation: show 5s linear infinite;
@@ -121,14 +122,15 @@ section {
 
     .section-title {
         padding: 1rem;
-
         width: 50%;
 
         h1 {
             font-size: 1.5rem;
+
         }
         p {
             font-family: $font-family;
+
         }
         &.right {
             right: 0;
