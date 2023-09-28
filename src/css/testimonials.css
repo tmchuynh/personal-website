@@ -3,15 +3,13 @@
 
 .testimonial-slide {
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
   width: 70%;
   margin: auto;
   padding: 20px;
   position: relative;
-  text-align: center;
-  align-self: center; }
+  align-self: center;
+  text-align: center; }
   .testimonial-slide img {
     top: 0;
     left: 0;
@@ -25,6 +23,7 @@
     line-height: 46px;
     text-align: center;
     position: relative;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
