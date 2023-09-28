@@ -1,11 +1,5 @@
 const content = [
 	{
-		type: 'icon',
-		data: {
-			icon: 'fast-forward'
-		}
-	},
-	{
 		type: 'divider',
 		data: null
 	},
@@ -21,10 +15,6 @@ const content = [
 		}
 	},
 	{
-		type: 'divider',
-		data: null
-	},
-	{
 		type: 'entryRight',
 		data: {
 			title: 'Experience Designer',
@@ -34,10 +24,6 @@ const content = [
 			description: 'Experience and UI design work for clients in the digital space, specialising in mobile experiences with limited screen real estate.',
 			icon: 'mobile'
 		}
-	},
-	{
-		type: 'divider',
-		data: null
 	},
 	{
 		type: 'entryLeft',

@@ -5,9 +5,6 @@ $orange: #ff934f;
 $black: #181f1c;
 $light-brown: #504746;
 
-:root {
-    font-size: 62.5%;
-}
 
 article.container {
     display: flex;
@@ -27,7 +24,7 @@ article.container {
             width: 0.2rem;
             margin-left: 0.9rem;
             margin-right: 0.9rem;
-            background-color: #000;
+            background-color: $black;
         }
 
         .center.line {
@@ -36,7 +33,7 @@ article.container {
             align-items: center;
 
             .entry-icon {
-                color: #000;
+                color: $black;
                 font-size: 2em;
                 z-index: 2;
                 background-color: $white;
@@ -50,7 +47,7 @@ article.container {
                 justify-content: center;
                 align-items: center;
                 background-color: $white;
-                color: #000;
+                color: $black;
                 font-size: 2em;
                 padding: 0.85rem 1rem;
             }
@@ -94,7 +91,8 @@ article.container {
             h1 {
                 font-size: 2rem;
                 text-transform: uppercase;
-                color: red;
+                color: $green;
+                font-weight: bold;
                 letter-spacing: 0.2rem;
                 margin: 0 0 1rem;
             }
