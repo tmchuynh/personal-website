@@ -1,0 +1,74 @@
+:root {
+  font-size: 62.5%; }
+
+article.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 494px; }
+  article.container section.row.divider, article.container section.row.entry {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative; }
+    article.container section.row.divider .center, article.container section.row.entry .center {
+      width: .2rem;
+      margin-left: .9rem;
+      margin-right: .9rem;
+      background-color: #000; }
+    article.container section.row.divider .center.line, article.container section.row.entry .center.line {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      article.container section.row.divider .center.line .entry-icon, article.container section.row.entry .center.line .entry-icon {
+        color: #000;
+        font-size: 2em;
+        z-index: 2;
+        background-color: #f2eee7;
+        padding: .85rem 1rem; }
+    article.container section.row.divider.icon .center, article.container section.row.entry.icon .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f2eee7;
+      color: #000;
+      font-size: 2em;
+      padding: .85rem 1rem; }
+    article.container section.row.divider .left.details, article.container section.row.divider .right.details, article.container section.row.entry .left.details, article.container section.row.entry .right.details {
+      flex: 1 40%;
+      padding: 2rem;
+      margin: 2rem;
+      position: relative; }
+      article.container section.row.divider .left.details p, article.container section.row.divider .right.details p, article.container section.row.entry .left.details p, article.container section.row.entry .right.details p {
+        padding: 0 1rem 1rem;
+        font-size: 1.4rem;
+        line-height: 2;
+        font-weight: bolder; }
+        article.container section.row.divider .left.details p::after, article.container section.row.divider .right.details p::after, article.container section.row.entry .left.details p::after, article.container section.row.entry .right.details p::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #eee;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          border-radius: 1rem;
+          transform: rotate(-2deg);
+          box-shadow: 0 0 1rem -0.3rem #333333; }
+    article.container section.row.divider .left.role, article.container section.row.divider .right.role, article.container section.row.entry .left.role, article.container section.row.entry .right.role {
+      flex: 1 40%;
+      padding: 2rem;
+      margin: 2rem; }
+      article.container section.row.divider .left.role h1, article.container section.row.divider .right.role h1, article.container section.row.entry .left.role h1, article.container section.row.entry .right.role h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: red;
+        letter-spacing: .2rem;
+        margin: 0 0 1rem; }
+      article.container section.row.divider .left.role h2, article.container section.row.divider .right.role h2, article.container section.row.entry .left.role h2, article.container section.row.entry .right.role h2 {
+        font-size: 1.8rem;
+        margin: 0; }
+      article.container section.row.divider .left.role h3, article.container section.row.divider .left.role p, article.container section.row.divider .right.role h3, article.container section.row.divider .right.role p, article.container section.row.entry .left.role h3, article.container section.row.entry .left.role p, article.container section.row.entry .right.role h3, article.container section.row.entry .right.role p {
+        font-size: 1.4rem; }

@@ -25,6 +25,13 @@
     <link href="src/css/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="src/css/testimonials.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="src/css/resume.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -49,7 +56,51 @@
             minim cillum pariatur veniam ex sint velit ut occaecat sint. Exercitation ea ea amet eu est tempor velit id
             magna fugiat culpa.</h1>
     </section>
-    
+
+    <template id="divider">
+        <section class="row divider">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </section>
+    </template>
+    <template id="divider-icon">
+        <section class="row divider icon">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </section>
+    </template>
+    <template id="entry-start-left">
+        <section class="row entry">
+            <div class="left role">
+                <h1 class="title"> </h1>
+                <h2 class="company"></h2>
+                <h3 class="location"></h3>
+                <p class="date"></p>
+            </div>
+            <div class="center line"></div>
+            <div class="right details">
+                <p class="description"></p>
+            </div>
+        </section>
+    </template>
+    <template id="entry-start-right">
+        <section class="row entry">
+            <div class="left details">
+                <p class="description"></p>
+            </div>
+            <div class="center line"></div>
+            <div class="right role">
+                <h1 class="title"> </h1>
+                <h2 class="company"></h2>
+                <h3 class="location"></h3>
+                <p class="date"></p>
+            </div>
+        </section>
+    </template>
+    <article class="container"></article>
+
     <div class="main-carousel">
         <div class="testimonial-slide">
             <img src="src\imgs\karl.jpeg" class="img-circle img-responsive" />
@@ -59,14 +110,17 @@
                     Her eagerness to learn and apply skills showed everyday, and I'd be happy to
                     recommend her as she moves forward.</p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/karl-echegoyen/">Karl Echegoyen</a><br/>
+            <cite><a href="https://www.linkedin.com/in/karl-echegoyen/">Karl Echegoyen</a><br />
                 <span>Software Engineer</span>
             </cite>
         </div>
         <div class="testimonial-slide" id="large-cell">
             <img src="src/imgs/justin.jpeg" class="img-circle img-responsive" />
             <blockquote>
-                <p>I had the pleasure of getting to know her through Theta Tau, a professional engineering chapter at   California State University, Fullerton. From the moment I met her, it was clear that she was a natural leader, always taking charge and coming up with innovative ideas even in the toughest of situations.
+                <p>I had the pleasure of getting to know her through Theta Tau, a professional engineering chapter at
+                    California State University, Fullerton. From the moment I met her, it was clear that she was a
+                    natural leader, always taking charge and coming up with innovative ideas even in the toughest of
+                    situations.
                     <br><br>
                     One of the things that impressed me the most was Tina's ability to learn new and
                     relevant skills, whether it was in building a business or developing technical expertise. Her
@@ -77,7 +131,7 @@
                     remarkable, and she has a talent for bringing out the best in everyone.
                 </p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/justinbui3493/">Justin Bui</a><br/>
+            <cite><a href="https://www.linkedin.com/in/justinbui3493/">Justin Bui</a><br />
                 <span>Software Engineer</span>
             </cite>
         </div>
@@ -90,7 +144,7 @@
                     quality
                     of her work was clear where our areas overlapped.</p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/greenemjeff/">Jeff Greene</a><br/>
+            <cite><a href="https://www.linkedin.com/in/greenemjeff/">Jeff Greene</a><br />
                 <span>Business Development Specialist</span>
             </cite>
         </div>
@@ -111,8 +165,8 @@
                     a software engineer for whoever is lucky enough to hire her.
                 </p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/gray-boulware-6538345b/">Gray Boulware</a><br/>
-                    <span>Full Stack Developer</span>
+            <cite><a href="https://www.linkedin.com/in/gray-boulware-6538345b/">Gray Boulware</a><br />
+                <span>Full Stack Developer</span>
             </cite>
         </div>
         <div class="testimonial-slide">
@@ -129,8 +183,8 @@
                     that
                     I rarely see anymore; a wonderful asset for any team.</p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/efrenaguilar95/">Efren Aguilar</a><br/>
-                        <span>Software Engineer I</span>
+            <cite><a href="https://www.linkedin.com/in/efrenaguilar95/">Efren Aguilar</a><br />
+                <span>Software Engineer I</span>
             </cite>
         </div>
         <div class="testimonial-slide">
@@ -145,7 +199,7 @@
                     fly no matter what the obstacle. Any team would be lucky to have a dependable
                     and ingenuitive developer like Tina on their team </p>
             </blockquote>
-            <cite><a href="https://www.linkedin.com/in/~spencer-demera/">Spencer DeMera</a><br/>
+            <cite><a href="https://www.linkedin.com/in/~spencer-demera/">Spencer DeMera</a><br />
                 <span>Jr. Web Developer</span>
             </cite>
         </div>
@@ -171,7 +225,7 @@
                     progress as I see she has great potential.</p>
             </blockquote>
             <cite><a href="https://www.linkedin.com/in/joshuajvenegas/">Joshua
-                        Venegas</a><br/>
+                    Venegas</a><br />
                 <span>Software Instructor</span>
             </cite>
         </div>
@@ -215,8 +269,9 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
                             </div>
                         </div>
                     </div>
@@ -268,10 +323,12 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="src/js/testimonialCarousel.js"></script>
+<script src="src/js/resume.js"></script>
 
 </html>
