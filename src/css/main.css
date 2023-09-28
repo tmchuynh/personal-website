@@ -59,6 +59,35 @@ nav {
   #flip div:nth-child(2n) div {
     color: #ff934f; }
 
+section {
+  position: relative;
+  display: flex;
+  margin: 2rem;
+  padding: 2rem 0; }
+  section .section-title {
+    padding: 1rem;
+    width: 50%; }
+    section .section-title h1 {
+      font-size: 4rem;
+      background-color: #f2eee7;
+      width: fit-content; }
+      section .section-title h1 + .line {
+        border: 1px solid black;
+        width: 90vw;
+        position: absolute;
+        height: max-content;
+        margin-left: 5rem;
+        margin-top: -2.5rem;
+        z-index: -1; }
+    section .section-title h3 {
+      font-size: 1.5rem; }
+    section .section-title p {
+      font-family: "Titillium Web", sans-serif; }
+    section .section-title.right {
+      right: 0; }
+    section .section-title.left {
+      left: 0; }
+
 @keyframes show {
   0% {
     margin-top: -33.75rem; }
@@ -76,20 +105,3 @@ nav {
     margin-top: 0rem; }
   100% {
     margin-top: -33.75rem; } }
-
-section {
-  position: relative;
-  display: flex;
-  margin: 2rem;
-  padding: 2rem 0; }
-  section .section-title {
-    padding: 1rem;
-    width: 50%; }
-    section .section-title h1 {
-      font-size: 1.5rem; }
-    section .section-title p {
-      font-family: "Titillium Web", sans-serif; }
-    section .section-title.right {
-      right: 0; }
-    section .section-title.left {
-      left: 0; }
