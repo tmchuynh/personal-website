@@ -5,3 +5,54 @@ $orange: #ff934f;
 $black: #181f1c;
 $light-brown: #504746;
 
+#portfolio {
+    width: 100%;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
+#portfolio-sort {
+    margin: 2rem 4.25em;
+    a {
+        color: #fff;
+        background: #a00;
+        display: inline-block;
+        padding: 3px 9px;
+        text-decoration: none;
+        margin-right: 1em;
+    }
+}
+
+#portfolio-content {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    gap: 2rem;
+
+    .portfolio-item {
+        float: left;
+        width: 29%;
+        height: 10em;
+        line-height: 10;
+        text-align: center;
+    }
+}
+
+
+div[data-cat="a"] {
+    background: #ccc;
+}
+
+div[data-cat="b"] {
+    background: #666;
+    color: #fff;
+}
+
+div[data-cat="c"] {
+    background: #333;
+    color: #fff;
+}
