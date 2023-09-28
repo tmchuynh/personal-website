@@ -1,11 +1,13 @@
-$(".main-carousel").Flickity({
+//initialize Flickity carousel
+$(".main-carousel").flickity({
+  autoPlay: true,
+  autoPlay: 3500,
+  setGallerySize: true,
   draggable: false,
-  prevNextButton: false,
+  prevNextButtons: false,
   pageDots: false,
   wrapAround: true,
   groupCells: false,
-  autoPlay: true,
-  autoPlay: 3500,
-  pauseAutoPlayOnHover: true,
-  adaptiveHeight: true
+  lazyLoad: 1,
+  pauseAutoPlayOnHover: true
 });

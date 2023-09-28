@@ -5,16 +5,20 @@ $orange: #ff934f;
 $black: #181f1c;
 $light-brown: #504746;
 
-.testimonial {
-  min-height: 375px;
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-position: center;
-  background-size: cover;
+// .testimonial {
+//   min-height: 375px;
+//   position: relative;
+//   padding-top: 50px;
+//   padding-bottom: 50px;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+.main-carousel {
+  height: 700px;
 }
 
-.testimonials_slide {
+.testimonial-slide {
   top: 0;
   left: 0;
   right: 0;
@@ -24,6 +28,7 @@ $light-brown: #504746;
   padding: 20px;
   position: relative;
   text-align: center;
+  align-self: center;
   img {
     top: 0;
     left: 0;
