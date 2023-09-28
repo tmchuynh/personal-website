@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400");
-*,
-*::after,
-*::before {
-  box-sizing: border-box; }
-
 .center {
   display: flex;
   justify-content: center;
