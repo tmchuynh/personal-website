@@ -28,6 +28,11 @@ a {
     }
 }
 
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
 .btn {
     font-family: $font-family-0;
     background-color: $orange;
@@ -102,7 +107,9 @@ section {
             font-size: 4rem;
             background-color: $white;
             width: fit-content;
-            +.line {
+            text-wrap: nowrap;
+            // wrap on medium and small screens
+            + .line {
                 border: 1px solid black;
                 width: 90vw;
                 position: absolute;
@@ -119,13 +126,117 @@ section {
 
         p {
             font-family: $font-family;
-
         }
         &.right {
             right: 0;
         }
         &.left {
             left: 0;
+        }
+    }
+}
+
+.footer-section {
+    background: $white;
+    border-top: 5px solid $black;
+    position: relative;
+}
+.footer-cta {
+    border-bottom: 1px solid $light-brown;
+}
+.single-cta i {
+    color: $orange;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+}
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+    h4 {
+        color: $black;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    span {
+        color: $light-brown;
+        font-size: 15px;
+    }
+}
+.footer-content {
+    position: relative;
+    z-index: 2;
+}
+.footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: $light-brown;
+    line-height: 28px;
+}
+.footer-widget-heading h3 {
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        height: 2px;
+        width: 50px;
+        background: $orange;
+    }
+}
+.footer-widget ul li {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    margin-bottom: 12px;
+    a {
+        color: $light-brown;
+        text-transform: capitalize;
+        &:hover {
+            color: $orange;
+        }
+    }
+}
+.copyright-area {
+    background: #202020;
+    padding: 25px 0;
+    .copyright-text {
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: $light-brown;
+            a {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    li {
+        display: inline-block;
+        margin-left: 20px;
+        a {
+            font-size: 14px;
+            color: $light-brown;
+        }
+        &:hover a {
+            color: $orange;
         }
     }
 }

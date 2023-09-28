@@ -13,6 +13,10 @@ a {
   a:hover {
     color: #ff934f; }
 
+ul {
+  margin: 0px;
+  padding: 0px; }
+
 .btn {
   font-family: "Merienda", cursive;
   background-color: #ff934f;
@@ -70,7 +74,8 @@ section {
     section .section-title h1 {
       font-size: 4rem;
       background-color: #f2eee7;
-      width: fit-content; }
+      width: fit-content;
+      text-wrap: nowrap; }
       section .section-title h1 + .line {
         border: 1px solid black;
         width: 90vw;
@@ -87,6 +92,95 @@ section {
       right: 0; }
     section .section-title.left {
       left: 0; }
+
+.footer-section {
+  background: #f2eee7;
+  border-top: 5px solid #181f1c;
+  position: relative; }
+
+.footer-cta {
+  border-bottom: 1px solid #504746; }
+
+.single-cta i {
+  color: #ff934f;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px; }
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block; }
+  .cta-text h4 {
+    color: #181f1c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px; }
+  .cta-text span {
+    color: #504746;
+    font-size: 15px; }
+
+.footer-content {
+  position: relative;
+  z-index: 2; }
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%; }
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #504746;
+  line-height: 28px; }
+
+.footer-widget-heading h3 {
+  color: #181f1c;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative; }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff934f; }
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px; }
+  .footer-widget ul li a {
+    color: #504746;
+    text-transform: capitalize; }
+    .footer-widget ul li a:hover {
+      color: #ff934f; }
+
+.copyright-area {
+  background: #202020;
+  padding: 25px 0; }
+  .copyright-area .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #504746; }
+    .copyright-area .copyright-text p a {
+      color: #ff934f; }
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px; }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #504746; }
+  .footer-menu li:hover a {
+    color: #ff934f; }
 
 @keyframes show {
   0% {
