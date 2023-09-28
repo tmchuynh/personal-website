@@ -50,7 +50,15 @@
             <a href="#" data-cat="c">C</a>
         </div>
         <div id="portfolio-content">
-            <div class="portfolio-item" data-cat="a">A</div>
+            <!-- // name of project
+            // languages icons
+            // categories (topics to filter the projects by)
+            // image as background with opacity less than 0.75 (?) -->
+            <div class="portfolio-item" data-cat="a">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+            </div>
             <div class="portfolio-item" data-cat="b">B</div>
             <div class="portfolio-item" data-cat="c">C</div>
             <div class="portfolio-item" data-cat="c">C</div>
@@ -62,6 +70,28 @@
         </div>
     
     </div>
+
+    <!-- // details on the project
+    // links for the project github pages and demo -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
     <footer class="footer-section">
