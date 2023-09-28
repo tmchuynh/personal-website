@@ -32,8 +32,11 @@
   .testimonial-slide p {
     font-size: 20px;
     line-height: 1.4;
-    margin: 40px 0 20px 0; }
+    margin: 40px 0 20px 0;
+    font-family: "Titillium Web", sans-serif; }
   .testimonial-slide cite {
     font-size: 22px; }
     .testimonial-slide cite span {
-      color: #059259; }
+      color: #059259;
+      font-weight: bold;
+      font-family: "Titillium Web", sans-serif; }
