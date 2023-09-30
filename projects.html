@@ -46,11 +46,11 @@
         <div id="portfolio-sort">
             <a href="#" class="btn" id="all">ALL</a>
             <!-- websites I worked on -->
-            <a href="#" class="btn" data-cat="websites">Websites</a>
+            <a href="#" class="btn" data-cat="a">Websites</a>
             <!-- projects I helped with -->
-            <a href="#" class="btn" data-cat="contributions">Contributions</a>
+            <a href="#" class="btn" data-cat="b">Contributions</a>
             <!-- smaller projects done for practice -->
-            <a href="#" class="btn" data-cat="mock projects">Mock Projects</a>
+            <a href="#" class="btn" data-cat="c">Mock Projects</a>
         </div>
         <div id="portfolio-content">
             <!-- // name of project
@@ -69,9 +69,10 @@
                     <i class='bx bxl-mongodb'></i>
                     <i class='bx bxl-java'></i>
                 </div>
-                <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
                     Info
-                </button>
+                </a>
             </div>
             <div class="portfolio-item" data-cat="b">B</div>
             <div class="portfolio-item" data-cat="c">C</div>
@@ -88,38 +89,56 @@
     <!-- // details on the project
         // image of the demo page(s)
     // links for the project github pages and demo -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="" class="img-responsive" alt="" />
-                    <p>Laboris culpa laborum ut reprehenderit excepteur irure. Est laboris cillum consectetur incididunt
-                        est irure anim nostrud fugiat exercitation ad velit.</p>
-                    <ul>
-                        <li>Ex reprehenderit duis commodo cupidatat officia tempor nisi id ea.</li>
-                        <li>Do pariatur Lorem minim ut amet ullamco adipisicing culpa mollit cupidatat pariatur fugiat
-                            labore nisi.</li>
-                        <li>Voluptate quis occaecat proident nisi tempor sunt culpa.</li>
-                        <li>Irure elit ad sint nisi culpa et et ea.</li>
-                        <li>Enim excepteur in ut non minim aute sunt.</li>
-                    </ul>
-                    <div class="links">
-                        <a href="#" class="btn">GitHub</a>
-                        <a href="#" class="btn">Demo</a>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+    <!-- <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
         </div>
+    </div> -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="offcanvasExample" tabindex="-1" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="images">
+                <img src="/src/imgs/codingdojocert.png" class="img-responsive" alt="" />
+                <img src="/src/imgs/codingdojocert.png" class="img-responsive" alt="" />
+                <img src="/src/imgs/codingdojocert.png" class="img-responsive" alt="" />
+            </div>
+            <p>Laboris culpa laborum ut reprehenderit excepteur irure. Est laboris cillum consectetur incididunt
+                est irure anim nostrud fugiat exercitation ad velit.</p>
+            <ul>
+                <li>Ex reprehenderit duis commodo cupidatat officia tempor nisi id ea.</li>
+                <li>Do pariatur Lorem minim ut amet ullamco adipisicing culpa mollit cupidatat pariatur fugiat
+                    labore nisi.</li>
+                <li>Voluptate quis occaecat proident nisi tempor sunt culpa.</li>
+                <li>Irure elit ad sint nisi culpa et et ea.</li>
+                <li>Enim excepteur in ut non minim aute sunt.</li>
+            </ul>
+            <div class="links">
+                <a href="#" class="btn">GitHub</a>
+                <a href="#" class="btn">Demo</a>
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
 

@@ -35,6 +35,10 @@ p {
     }
 }
 
+ul {
+    padding: 1.5rem;
+}
+
 #portfolio-content {
     justify-content: center;
     align-items: center;
@@ -71,6 +75,26 @@ p {
             border: 1px solid $green;
         }
     }
+}
+
+.offcanvas {
+    &.show {
+        width: 100vw;
+    }
+    .links {
+        position: absolute;
+        left: 0;
+        top: 3rem;
+    }
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            width: 40%;
+        }
+    }
+
 }
 
 
