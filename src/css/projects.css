@@ -1,10 +1,15 @@
+p {
+  font-family: "Titillium Web", sans-serif; }
+
 #portfolio {
   width: 100%;
   max-width: 80%;
   margin: 1rem auto; }
 
+.links,
 #portfolio-sort {
   margin: 2rem 4.25rem; }
+  .links a,
   #portfolio-sort a {
     color: #f2eee7;
     background: #a00;
@@ -13,6 +18,7 @@
     text-decoration: none;
     margin-right: 1rem;
     font-size: 1rem; }
+    .links a:hover,
     #portfolio-sort a:hover {
       color: #a00;
       background: #f2eee7;
@@ -33,8 +39,6 @@
     padding: 1rem;
     min-height: fit-content;
     position: relative; }
-    #portfolio-content .portfolio-item p {
-      font-family: "Titillium Web", sans-serif; }
     #portfolio-content .portfolio-item .languages {
       bottom: 0;
       right: 0;

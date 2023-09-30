@@ -6,6 +6,9 @@ $black: #181f1c;
 $light-brown: #504746;
 $font-family: "Titillium Web", sans-serif;
 
+p {
+    font-family: $font-family;
+}
 
 #portfolio {
     width: 100%;
@@ -13,6 +16,7 @@ $font-family: "Titillium Web", sans-serif;
     margin: 1rem auto;
 }
 
+.links,
 #portfolio-sort {
     margin: 2rem 4.25rem;
     a {
@@ -47,9 +51,7 @@ $font-family: "Titillium Web", sans-serif;
         padding: 1rem;
         min-height: fit-content;
         position: relative;
-        p {
-            font-family: $font-family;
-        }
+
         .languages {
             bottom: 0;
             right: 0;
@@ -59,7 +61,6 @@ $font-family: "Titillium Web", sans-serif;
                 font-size: 1.5rem;
             }
         }
-
     }
     .btn {
         background-color: $green;
