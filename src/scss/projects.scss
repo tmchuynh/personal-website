@@ -4,27 +4,34 @@ $green: #059259;
 $orange: #ff934f;
 $black: #181f1c;
 $light-brown: #504746;
+$font-family: "Titillium Web", sans-serif;
+
 
 #portfolio {
     width: 100%;
     max-width: 80%;
-    margin: 1em auto;
+    margin: 1rem auto;
 }
 
 #portfolio-sort {
-    margin: 2rem 4.25em;
+    margin: 2rem 4.25rem;
     a {
-        color: #fff;
+        color: $white;
         background: #a00;
         display: inline-block;
         padding: 3px 9px;
         text-decoration: none;
-        margin-right: 1em;
+        margin-right: 1rem;
+        font-size: 1rem;
+        &:hover {
+            color: #a00;
+            background: $white;
+            border: 1px solid #a00;
+        }
     }
 }
 
 #portfolio-content {
-    overflow: hidden;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -36,9 +43,32 @@ $light-brown: #504746;
     .portfolio-item {
         float: left;
         width: 29%;
-        height: 10em;
-        line-height: 10;
-        text-align: center;
+        text-align: left;
+        padding: 1rem;
+        min-height: fit-content;
+        position: relative;
+        p {
+            font-family: $font-family;
+        }
+        .languages {
+            bottom: 0;
+            right: 0;
+            padding: 1rem;
+            position: absolute;
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+    .btn {
+        background-color: $green;
+        border: 1px solid $green;
+        font-family: $font-family;
+        &:hover {
+            background-color: $white;
+            border: 1px solid $green;
+        }
     }
 }
 

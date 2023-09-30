@@ -1,20 +1,24 @@
 #portfolio {
   width: 100%;
   max-width: 80%;
-  margin: 1em auto; }
+  margin: 1rem auto; }
 
 #portfolio-sort {
-  margin: 2rem 4.25em; }
+  margin: 2rem 4.25rem; }
   #portfolio-sort a {
-    color: #fff;
+    color: #f2eee7;
     background: #a00;
     display: inline-block;
     padding: 3px 9px;
     text-decoration: none;
-    margin-right: 1em; }
+    margin-right: 1rem;
+    font-size: 1rem; }
+    #portfolio-sort a:hover {
+      color: #a00;
+      background: #f2eee7;
+      border: 1px solid #a00; }
 
 #portfolio-content {
-  overflow: hidden;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -25,9 +29,26 @@
   #portfolio-content .portfolio-item {
     float: left;
     width: 29%;
-    height: 10em;
-    line-height: 10;
-    text-align: center; }
+    text-align: left;
+    padding: 1rem;
+    min-height: fit-content;
+    position: relative; }
+    #portfolio-content .portfolio-item p {
+      font-family: "Titillium Web", sans-serif; }
+    #portfolio-content .portfolio-item .languages {
+      bottom: 0;
+      right: 0;
+      padding: 1rem;
+      position: absolute; }
+      #portfolio-content .portfolio-item .languages i {
+        font-size: 1.5rem; }
+  #portfolio-content .btn {
+    background-color: #059259;
+    border: 1px solid #059259;
+    font-family: "Titillium Web", sans-serif; }
+    #portfolio-content .btn:hover {
+      background-color: #f2eee7;
+      border: 1px solid #059259; }
 
 div[data-cat="a"] {
   background: #ccc; }
