@@ -1,3 +1,15 @@
+section h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #059259;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 0 2rem; }
+
+section p {
+  padding: 0 2rem; }
+
 article.container {
   display: flex;
   flex-direction: column;
@@ -30,6 +42,7 @@ article.container {
         padding: 0.85rem 1rem; }
     article.container section.row.divider.icon .center,
     article.container section.row.entry.icon .center {
+      font-family: 'Times New Roman', Times, serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -84,19 +97,20 @@ article.container {
         font-weight: bold;
         letter-spacing: 0.2rem;
         margin: 0 0 1rem; }
-      article.container section.row.divider .left.role h2,
-      article.container section.row.divider .right.role h2,
-      article.container section.row.entry .left.role h2,
-      article.container section.row.entry .right.role h2 {
+      article.container section.row.divider .left.role h3,
+      article.container section.row.divider .right.role h3,
+      article.container section.row.entry .left.role h3,
+      article.container section.row.entry .right.role h3 {
         font-size: 1.8rem;
         margin: 0; }
-      article.container section.row.divider .left.role h3,
+      article.container section.row.divider .left.role h4,
       article.container section.row.divider .left.role p,
-      article.container section.row.divider .right.role h3,
+      article.container section.row.divider .right.role h4,
       article.container section.row.divider .right.role p,
-      article.container section.row.entry .left.role h3,
+      article.container section.row.entry .left.role h4,
       article.container section.row.entry .left.role p,
-      article.container section.row.entry .right.role h3,
+      article.container section.row.entry .right.role h4,
       article.container section.row.entry .right.role p {
         font-size: 1.4rem;
-        font-family: "Titillium Web", sans-serif; }
+        font-family: "Titillium Web", sans-serif;
+        padding: 0; }

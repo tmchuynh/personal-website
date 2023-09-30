@@ -71,12 +71,12 @@ nav {
 section {
   position: relative;
   display: flex;
-  margin: 2rem;
-  padding: 2rem 0; }
+  padding: 2rem 1rem; }
   section .section-title {
     padding: 1rem;
     width: 50%; }
     section .section-title h1 {
+      margin: 0 1rem;
       font-size: 4rem;
       background-color: #f2eee7;
       width: fit-content;

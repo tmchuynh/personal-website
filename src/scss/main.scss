@@ -103,13 +103,13 @@ nav {
 section {
     position: relative;
     display: flex;
-    margin: 2rem;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 
     .section-title {
         padding: 1rem;
         width: 50%;
         h1 {
+            margin: 0 1rem;
             font-size: 4rem;
             background-color: $white;
             width: fit-content;

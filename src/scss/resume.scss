@@ -6,6 +6,21 @@ $black: #181f1c;
 $light-brown: #504746;
 $font-family: "Titillium Web", sans-serif;
 
+section {
+    h2 {
+        font-family: $font-family;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $green;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        padding: 0 2rem;
+    }
+    p {
+        padding: 0 2rem;
+    }
+}
+
 article.container {
     display: flex;
     flex-direction: column;
@@ -43,6 +58,7 @@ article.container {
 
         &.icon {
             .center {
+                font-family: 'Times New Roman', Times, serif;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -98,15 +114,16 @@ article.container {
                 margin: 0 0 1rem;
             }
 
-            h2 {
+            h3 {
                 font-size: 1.8rem;
                 margin: 0;
             }
 
-            h3,
+            h4,
             p {
                 font-size: 1.4rem;
                 font-family: $font-family;
+                padding: 0;
             }
         }
     }
