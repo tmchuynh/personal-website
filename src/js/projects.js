@@ -1,13 +1,13 @@
 var Portfolio = {
-    sort: function(items) {
+    sort: function (items) {
         items.show();
         $('#portfolio-content').find('div.portfolio-item').not(items).fadeOut(500);
     },
-    showAll: function(items) {
+    showAll: function (items) {
         items.fadeIn(500);
     },
-    doSort: function() {
-        $('a', '#portfolio-sort').on('click', function() {
+    doSort: function () {
+        $('a', '#portfolio-sort').on('click', function () {
 
             var $a = $(this);
             if (!$a.is('#all')) {
