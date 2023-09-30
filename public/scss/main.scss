@@ -1,0 +1,381 @@
+/* icons and fonts */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Playfair+Display:wght@900&display=swap");
+
+/*--------------------------------------------------------------
+  # Variables
+--------------------------------------------------------------*/
+$limit-justify-content: center;
+$limit-align-items: center;
+$devcard-justify-content: center;
+$grey: #343333;
+$white: #cbcbcb;
+$black: rgb(22, 19, 19);
+$genuine_black: #171717;
+$light-brown: #fef887;
+$brown: #333342;
+$font-family: "Playfair Display", serif;
+$font-family-0: "PT Sans Narrow", sans-serif;
+$bold-font-weight: 700;
+$border-radius: 0.25rem;
+$hover-transition: all 175ms ease;
+$linkedin: #0a66c2;
+$twitter: #56b9ff;
+$gmail: #d93025;
+$border: 0.125px solid $white;
+:root {
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: $font-family;
+    width: 100%;
+    background-color: #333342;
+
+    p {
+        font-family: $font-family-0;
+        font-size: 1.25rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    li {
+        font-family: $font-family;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Buttons
+--------------------------------------------------------------*/
+
+.btn {
+    background: none;
+    border: $border;
+    color: $grey;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: $hover-transition;
+    -moz-transition: $hover-transition;
+    -ms-transition: $hover-transition;
+    -o-transition: $hover-transition;
+    transition: $hover-transition;
+
+    &:hover {
+        background: $grey;
+        color: #f2f3eb;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Images
+--------------------------------------------------------------*/
+
+img {
+    width: 75%;
+    object-fit: contain;
+}
+
+/*--------------------------------------------------------------
+  # Links
+--------------------------------------------------------------*/
+
+a {
+    color: $brown;
+    text-decoration: none;
+
+    &:hover {
+        color: $grey;
+    }
+}
+
+.cursor-muted {
+    cursor: unset;
+}
+
+/*--------------------------------------------------------------
+  # Navigation Bar (Desktop)
+--------------------------------------------------------------*/
+
+.navbar {
+    min-width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 7.04px;
+    font-size: 1rem;
+    padding: 1rem 4rem;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    border-bottom: $border;
+
+    .navbar-brand {
+        color: $black;
+    }
+
+    .nav-item {
+        color: black;
+        margin: 0 1rem;
+        &:hover {
+            color: $grey;
+        }
+    }
+    @media (min-width: 1024px) {
+        text-align: center;
+    }
+}
+
+.navbar-brand {
+    color: white;
+}
+
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+.row {
+    border-bottom: $border;
+
+}
+
+section {
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin: 1.5rem;
+
+    .section-title {
+        text-align: center;
+        padding: 0rem;
+        padding-top: 1rem;
+        border-left: $border !important;
+        border-right: $border !important;
+
+        min-width: 20rem;
+        min-height: 100%;
+
+        h2 {
+            /*name of section */
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            padding-bottom: 1.25rem;
+            position: relative;
+            color: $brown;
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 7.75rem;
+                height: 1px;
+                background: $grey;
+                bottom: 1px;
+                left: calc(50% - 3.75rem);
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 2.5rem;
+                height: 3px;
+                background: $brown;
+                bottom: 0;
+                left: calc(50% - 1.25rem);
+            }
+        }
+
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            margin-top: 14px;
+            padding-left: 4rem;
+            position: relative;
+            color: $grey;
+            font-weight: bold;
+            text-align: start;
+            font-size: 1.5rem;
+
+            @media (max-width: 940px) {
+                margin-bottom: 7rem;
+                padding-left: 5rem;
+            }
+
+            @media (max-width: 420px) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        p {
+            margin: auto;
+            width: 90%;
+            text-align: left;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+  # Commit Graph
+  --------------------------------------------------------------*/
+.git-history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    max-width: 100rem;
+    width: 75%;
+    img {
+        width: 75%;
+    }
+}
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+.site-footer {
+    font-size: 15px;
+    line-height: 2rem;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    h6 {
+        /*category names*/
+        color: $light-brown;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 5px;
+        margin-bottom: 1rem;
+        letter-spacing: 14px;
+    }
+    p {
+        text-align: justify;
+        color: $white;
+        @media only screen and (max-width: 991px) {
+            margin-right: 1.25rem;
+            margin-top: 15px;
+        }
+    }
+    .copyright-text {
+        /* small text to left of icons */
+        margin: 0;
+        text-align: right;
+        @media only screen and (max-width: 991px) {
+            text-align: center;
+        }
+        a {
+            @media only screen and (max-width: 767px) {
+                margin-right: 0;
+            }
+        }
+    }
+    .container-fluid {
+        margin: 60px auto;
+        position: relative;
+        .section-title {
+            border: none !important;
+            form {
+                margin: 50px 0;
+                width: 50rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 0;
+    }
+}
+
+.footer-links {
+    padding-left: 0;
+    padding-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    li {
+        margin-left: 3.125rem;
+        position: relative;
+        a {
+            color: $black;
+            &:hover + .bxl-linkedin {
+                color: $white;
+                background-color: $linkedin;
+                visibility: visible;
+            }
+            &:hover + .bx-code-block {
+                color: $grey;
+                visibility: visible;
+            }
+            &:hover + .bxl-github {
+                color: $grey;
+                visibility: visible;
+            }
+            &:hover + .bxs-briefcase-alt-2 {
+                visibility: visible;
+                color: $black;
+            }
+        }
+        i {
+            visibility: hidden;
+            font-size: 1.25rem;
+            &.bxl-linkedin {
+                @media (max-width: 767px) {
+                    color: $white;
+                    background-color: $linkedin;
+                    visibility: visible;
+                }
+            }
+            &.bx-code-block {
+                @media (max-width: 767px) {
+                    color: $grey;
+                    visibility: visible;
+                }
+            }
+            &.bxl-github {
+                @media (max-width: 767px) {
+                    background-color: $white;
+                    color: $grey;
+                    visibility: visible;
+                }
+            }
+            &.bxs-briefcase-alt-2 {
+                @media (max-width: 767px) {
+                    background-color: $white;
+                    color: $black;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    @media (max-width: 520px) {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+    @media only screen and (max-width: 991px) {
+        gap: 0rem;
+        left: -5%;
+        position: relative;
+    }
+}

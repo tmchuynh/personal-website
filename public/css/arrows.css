@@ -1,0 +1,47 @@
+.arrows {
+  padding-top: 2rem; }
+
+.keys {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  width: 365px;
+  height: 12.5rem;
+  margin: 1rem; }
+
+.arr {
+  cursor: pointer;
+  width: 6.25rem;
+  height: 6.25rem;
+  text-align: center;
+  line-height: 6.25rem;
+  background: grey;
+  color: white;
+  font-size: 55px;
+  border-right: 10px solid #b8b8b8;
+  border-bottom: 10px solid #242222;
+  border-left: 10px solid #5a5a5a;
+  border-top: 10px solid #a09b9b;
+  display: inline-block;
+  margin: 2px;
+  transition: all 0.05s linear;
+  user-select: none; }
+  .arr:active {
+    border-bottom: 8px solid #4d4d4d;
+    text-shadow: 0 0 10px solid white, 0 0 10px solid white, 0 0 20px white;
+    transform: translate(0, 2px); }
+
+.up {
+  position: relative;
+  top: -2px; }
+
+.pressed {
+  border-bottom: 8px solid #4d4d4d;
+  text-shadow: 0 0 10px solid white;
+  transform: translate(0, 2px); }
+
+.names {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px solid white, 0 0 10px solid white, 0 0 10px solid white, 0 0 10px solid white; }

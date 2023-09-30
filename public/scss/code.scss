@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+span {
+	&.emphasis {
+		color: #007bff; /* Blue */
+	}
+	&.names {
+		color: #3498db; /* Light Blue */
+	}
+	&.parenth {
+		color: #2980b9; /* Dark Blue */
+	}
+	&.outside {
+		color: #4169e1; /* Royal Blue */
+	}
+	&.load {
+		color: #1e90ff; /* Dodger Blue */
+	}
+	&.function {
+		color: #4682b4; /* Steel Blue */
+	}
+	&.params {
+		color: #87ceeb; /* Sky Blue */
+	}
+}
