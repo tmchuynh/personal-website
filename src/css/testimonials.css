@@ -30,6 +30,19 @@
     -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
     -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
     -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23); }
+  .testimonial-slide .swirls1,
+  .testimonial-slide .swirls2 {
+    border-radius: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 30%;
+    top: -5%;
+    width: fit-content;
+    height: 15rem;
+    box-shadow: none; }
+  .testimonial-slide .swirls2 {
+    transform: scaleX(-1) rotate(90deg);
+    left: -30%; }
   .testimonial-slide p {
     font-size: 20px;
     line-height: 1.4;

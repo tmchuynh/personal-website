@@ -40,6 +40,21 @@ $font-family: "Titillium Web", sans-serif;
     -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
     -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
   }
+  .swirls1,
+  .swirls2 {
+    border-radius: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 30%;
+    top: -5%;
+    width: fit-content;
+    height: 15rem;
+    box-shadow: none;
+  }
+  .swirls2 {
+    transform: scaleX(-1) rotate(90deg);
+    left: -30%;
+  }
   p {
     font-size: 20px;
     line-height: 1.4;
