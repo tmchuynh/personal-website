@@ -3,7 +3,6 @@ p {
 
 #portfolio {
   width: 100%;
-  max-width: 80%;
   margin: 1rem auto; }
 
 .links,
@@ -37,7 +36,7 @@ ul {
   gap: 2rem; }
   #portfolio-content .portfolio-item {
     float: left;
-    width: 29%;
+    width: 30rem;
     text-align: left;
     padding: 1rem;
     min-height: fit-content;
