@@ -41,9 +41,6 @@ ul {
 nav {
   font-family: "Titillium Web", sans-serif;
   width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: auto;
   margin-top: 2rem; }
   nav .nav-item {
