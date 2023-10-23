@@ -11,6 +11,8 @@ var Portfolio = {
 
             var $a = $(this);
             if (!$a.is('#all')) {
+                window.location.href = "http://127.0.0.1:5502/index.html#portfolio";
+
 
                 var items = $('div[data-cat=' + $a.data('cat') + ']', '#portfolio-content');
 
@@ -18,6 +20,7 @@ var Portfolio = {
 
             } else {
 
+                window.location.href = "http://127.0.0.1:5502/index.html#portfolio";
                 Portfolio.showAll($('div.portfolio-item', '#portfolio-content'));
 
 
