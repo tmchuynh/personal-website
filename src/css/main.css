@@ -23,7 +23,8 @@ ul {
   ul li {
     font-family: "Titillium Web", sans-serif; }
     ul li b {
-      font-family: "Merienda", cursive; }
+      font-family: "Merienda", cursive;
+      font-size: larger; }
 
 .btn {
   font-family: "Titillium Web", sans-serif;
