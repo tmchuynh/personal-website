@@ -39,7 +39,11 @@ ul {
     width: 30rem;
     text-align: left;
     padding: 1rem;
-    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 40rem;
+    height: max-content;
     position: relative; }
     #portfolio-content .portfolio-item .languages {
       bottom: 0;

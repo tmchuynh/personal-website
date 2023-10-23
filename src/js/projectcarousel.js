@@ -4,6 +4,7 @@ $('.owl-carousel').owlCarousel({
     nav:false,
     autoplay: true,
     margin: 2,
+    fluidSpeed: 200,
     dots: true,
     center: true,
     lazyLoad:true,
