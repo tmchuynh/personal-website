@@ -68,6 +68,13 @@ nav {
   #flip div:nth-child(2n) div {
     color: #ff934f; }
 
+.store-front {
+  position: relative;
+  height: 45rem; }
+  .store-front .right {
+    position: absolute;
+    top: -15rem; }
+
 section {
   position: relative;
   display: flex;

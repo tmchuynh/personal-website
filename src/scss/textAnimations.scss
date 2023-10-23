@@ -10,13 +10,25 @@ $font-family: "Titillium Web", sans-serif;
     position: relative;
     h2 {
         font-size: 4em;
+        display: inline-block;
+        top: 0;
+        left: 0;
         position: absolute;
+        transform: translate(-50%, -100%);
         text-wrap: nowrap;
-        transform: translate(-50%, -50%);
         animation: move 20s infinite linear;
         font-family: $font-family;
         text-transform: uppercase;
         font-weight: 600;
+        margin-top: 2.425rem;
+    }
+    h2:nth-child(2) {
+        position: absolute;
+        top: 0;
+        // left: 5rem;
+        margin-top: 0rem;
+        transform: translate(50%, -50%);
+        animation: move 20s infinite linear;
     }
 }
 
