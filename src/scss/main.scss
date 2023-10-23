@@ -107,11 +107,12 @@ nav {
 }
 
 .store-front {
+    width: 100%;
     position: relative;
-    height: 35rem;
     .right {
         position: absolute;
-        top: -15rem;
+        top: -18rem;
+        left: 0;
     }
 }
 

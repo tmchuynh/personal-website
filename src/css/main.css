@@ -73,11 +73,12 @@ nav {
     color: #ff934f; }
 
 .store-front {
-  position: relative;
-  height: 35rem; }
+  width: 100%;
+  position: relative; }
   .store-front .right {
     position: absolute;
-    top: -15rem; }
+    top: -18rem;
+    left: 0; }
 
 section {
   position: relative;
