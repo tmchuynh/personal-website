@@ -36,6 +36,12 @@ a {
 ul {
     margin: 0px;
     padding: 0px;
+    li {
+        font-family: $font-family;
+        b {
+            font-family: $font-family-0;
+        }
+    }
 }
 
 .btn {

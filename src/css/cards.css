@@ -22,7 +22,7 @@
   border-radius: 10px; }
   .card:hover {
     background-position: 80% 20%;
-    transform: rotate3d(0.5, 1, 0, 30deg); }
+    transform: rotate3d(0.5, 1, 0, 10deg); }
 
 .content-box {
   height: 100%;
@@ -39,16 +39,12 @@
     font-weight: 900;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px); }
-    .content-box .card-title:hover {
-      transform: translate3d(0px, 0px, 50px); }
   .content-box .card-content {
     padding-top: 15px;
     font-size: 12px;
     color: #b9b9b9;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px); }
-    .content-box .card-content:hover {
-      transform: translate3d(0px, 0px, 50px); }
   .content-box .see-more {
     display: block;
     font-weight: 900;
@@ -59,32 +55,12 @@
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px);
     background-color: transparent;
-    border: none; }
+    border: none;
+    padding: .5rem;
+    border-radius: 10px; }
     .content-box .see-more:hover {
-      transform: translate3d(0px, 0px, 50px); }
-
-.date-box {
-  position: absolute;
-  top: 75px;
-  left: 25px;
-  height: 60px;
-  width: 60px;
-  background-color: black;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px 18px 36px -18px;
-  transform: translate3d(0px, 0px, 50px); }
-  .date-box span {
-    display: block;
-    text-align: center; }
-  .date-box .month {
-    color: white;
-    font-size: 11px;
-    font-weight: 700; }
-  .date-box .date {
-    font-size: 20px;
-    font-weight: 900;
-    color: #0088ff; }
+      transform: translate3d(0px, 0px, 50px);
+      border: 1px solid white; }
 
 .card2 {
   filter: hue-rotate(185deg); }

@@ -20,6 +20,10 @@ a {
 ul {
   margin: 0px;
   padding: 0px; }
+  ul li {
+    font-family: "Titillium Web", sans-serif; }
+    ul li b {
+      font-family: "Merienda", cursive; }
 
 .btn {
   font-family: "Titillium Web", sans-serif;
