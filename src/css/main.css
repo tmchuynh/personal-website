@@ -112,6 +112,9 @@ section {
     section .section-title.left {
       left: 0; }
 
+.project img {
+  width: 50em; }
+
 .footer-section {
   background: #f2eee7;
   border-top: 5px solid #181f1c;
