@@ -105,8 +105,14 @@ nav {
 }
 
 .store-front {
-    width: 100%;
     position: relative;
+    .section-title {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1708px) {
     .right {
         position: absolute;
         top: -18rem;
@@ -164,6 +170,14 @@ section {
 .project {
     img {
         width: 50em;
+    }
+}
+
+@media (max-width: 786px) {
+    .project {
+        img {
+            width: 30em;
+        }
     }
 }
 
