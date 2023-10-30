@@ -2,8 +2,9 @@ $white: #f2eee7;
 $off-white: #ecdcb0;
 $green: #059259;
 $orange: #ff934f;
-$black: #181f1c;
-$light-brown: #504746;
+$black: #202020;
+$brown: #038194;
+$light-brown: #66462C;
 $font-family: "Titillium Web", sans-serif;
 $font-family-0: "Merienda", cursive;
 $border: 1px solid $black;
@@ -94,11 +95,12 @@ nav {
         }
         &:first-child {
             animation: show 5s linear infinite;
-        }
-        &:nth-child(2n-1) div {
             color: $green;
         }
-        &:nth-child(2n) div {
+        &:nth-child(2) div {
+            color: $brown;
+        }
+        &:nth-child(3) div {
             color: $orange;
         }
     }
@@ -262,7 +264,7 @@ section {
     }
 }
 .copyright-area {
-    background: #202020;
+    background: $black;
     padding: 25px 0;
     .copyright-text {
         p {

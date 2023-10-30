@@ -13,7 +13,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #181f1c; }
+  color: #202020; }
   a:hover {
     color: #ff934f; }
 
@@ -47,7 +47,7 @@ nav {
     font-weight: 900;
     text-decoration: none !important;
     font-size: 2rem;
-    color: #181f1c;
+    color: #202020;
     text-transform: uppercase; }
 
 .hero-section {
@@ -64,10 +64,11 @@ nav {
     margin-bottom: 45px;
     display: inline-block; }
   #flip div:first-child {
-    animation: show 5s linear infinite; }
-  #flip div:nth-child(2n-1) div {
+    animation: show 5s linear infinite;
     color: #059259; }
-  #flip div:nth-child(2n) div {
+  #flip div:nth-child(2) div {
+    color: #038194; }
+  #flip div:nth-child(3) div {
     color: #ff934f; }
 
 .store-front {
@@ -125,11 +126,11 @@ section {
 
 .footer-section {
   background: #f2eee7;
-  border-top: 5px solid #181f1c;
+  border-top: 5px solid #202020;
   position: relative; }
 
 .footer-cta {
-  border-bottom: 1px solid #504746; }
+  border-bottom: 1px solid #66462C; }
 
 .single-cta i {
   color: #ff934f;
@@ -141,12 +142,12 @@ section {
   padding-left: 15px;
   display: inline-block; }
   .cta-text h4 {
-    color: #181f1c;
+    color: #202020;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 2px; }
   .cta-text i {
-    color: #504746;
+    color: #66462C;
     font-size: 2rem;
     padding-right: 1.5rem; }
     .cta-text i:hover {
@@ -167,11 +168,11 @@ section {
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #504746;
+  color: #66462C;
   line-height: 28px; }
 
 .footer-widget-heading h3 {
-  color: #181f1c;
+  color: #202020;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -191,7 +192,7 @@ section {
   width: 50%;
   margin-bottom: 12px; }
   .footer-widget ul li a {
-    color: #504746;
+    color: #66462C;
     text-transform: capitalize; }
     .footer-widget ul li a:hover {
       color: #ff934f; }
@@ -202,7 +203,7 @@ section {
   .copyright-area .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #504746; }
+    color: #66462C; }
     .copyright-area .copyright-text p a {
       color: #ff934f; }
 
@@ -211,7 +212,7 @@ section {
   margin-left: 20px; }
   .footer-menu li a {
     font-size: 14px;
-    color: #504746; }
+    color: #66462C; }
   .footer-menu li:hover a {
     color: #ff934f; }
 
