@@ -145,9 +145,12 @@ section {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 2px; }
-  .cta-text span {
+  .cta-text i {
     color: #504746;
-    font-size: 15px; }
+    font-size: 2rem;
+    padding-right: 1.5rem; }
+    .cta-text i:hover {
+      color: #ff934f; }
 
 .footer-content {
   position: relative;
