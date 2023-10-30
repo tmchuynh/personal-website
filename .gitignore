@@ -3,4 +3,4 @@ create.todo
 /projects.html
 /services.html
 /contact.html
-/src/js
+/src/js/*.js
